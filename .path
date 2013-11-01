@@ -1,0 +1,18 @@
+declare -a paths=(
+    "/usr/local/bin"
+    "/usr/bin"
+    "/bin"
+    "/usr/local/opt/php55/bin"
+    "/usr/local/opt/coreutils/libexec/gnubin"
+)
+
+for p in ${paths[*]}
+do
+    if [ -d "$p" ]; then
+        PATH="$p:$PATH"
+    fi
+done
+
+unset paths
+
+export PATH

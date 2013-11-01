@@ -1,0 +1,25 @@
+[color]
+    # Always colorize the output
+    ui = always
+[core]
+    # Global exlcudes
+    excludesfile = ~/.gitignore
+
+    # Global attributes
+    attributesFile = ~/.gitattributes
+[alias]
+    # View abbreviated SHA, description, and history graph of the latest 20 commits
+    l = log --pretty=oneline -n 20 --graph --abbrev-commit
+    s = status -s
+    ca = commit -am
+    c = clone
+    p = pull
+    pa = push --all
+    pom = push origin master
+    go = checkout
+    a = add
+    aa = add .
+    b = branch
+    r = remote -v
+    ra = remote add
+    rrm = remote rm
