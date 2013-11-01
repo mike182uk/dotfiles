@@ -5,6 +5,7 @@ declare -a dotfiles=(
     "exports"
     "aliases"
     "functions"
+    "bash_local"
 )
 
 for dotfile in ${dotfiles[*]}
