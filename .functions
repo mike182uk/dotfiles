@@ -63,7 +63,7 @@ function server() {
 function phpserver() {
     local port="${1:-4000}"
     sleep 1 && open "http://localhost:${port}/" &
-    php -S "${ip}:${port}"
+    php -S "localhost:${port}/"
 }
 
 # Compare original and gzipped file size
