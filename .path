@@ -1,18 +1,32 @@
-declare -a paths=(
-    "/usr/local/bin"
-    "/usr/bin"
-    "/bin"
-    "/usr/local/opt/php55/bin"
-    "/usr/local/opt/coreutils/libexec/gnubin"
+# Directories to be prepended to PATH
+declare -a prepend_paths=(
+    "/usr/local/bin" # Ensure that this bin always takes precedence over `/usr/bin`
 )
 
-for p in ${paths[*]}
+# Directories to be appended to PATH
+declare -a append_paths=(
+    "/usr/bin"
+    "$(brew --prefix php55)/bin" # Add brew installed PHP bin (for PEAR packages)
+    "$(brew --prefix coreutils)/libexec/gnubin" # Add brew-installed GNU core utilities bin
+    "$(brew --prefix)/share/npm/bin" # Add npm-installed package bin
+)
+
+# Prepend directories to PATH
+for p in ${prepend_paths[*]}
 do
     if [ -d "$p" ]; then
         PATH="$p:$PATH"
     fi
 done
 
-unset paths
+# Append directories to PATH
+for p in ${append_paths[*]}
+do
+    if [ -d "$p" ]; then
+        PATH="$PATH:$p"
+    fi
+done
+
+unset prepend_paths append_paths
 
 export PATH
