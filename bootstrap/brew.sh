@@ -20,6 +20,7 @@ brew install findutils # Install GNU `find`, `locate`, `updatedb`, and `xargs`, 
 brew install wget --enable-iri # Install wget with IRI support
 brew install ack
 brew install homebrew/dupes/grep
+brew install tree
 
 # Install GIT
 brew install git
