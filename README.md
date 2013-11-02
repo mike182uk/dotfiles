@@ -16,7 +16,7 @@ Run the sync script.
 . sync.sh
 ```
 
-## Local config / commands
+## Local Config / Commands
 
 You should store your local specific conifg / commands in `~/bash_local`. If this file is available, it will be sourced automatically by `~/.bash_profile`. I use this file to set my global git config options:
 
@@ -43,3 +43,6 @@ In the bootstrap directory there are a couple of scripts to bootstrap the system
 - `npm.sh` - Installs and updates node packages
 - `osx.sh` - Sets sensible OS X defaults
 
+## Miscellaneous
+
+The `etc` directory contains other miscellaneous files (specific config files for apps etc).
