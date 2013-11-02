@@ -3,6 +3,7 @@
 function sync() {
     rsync --exclude ".git/" \
           --exclude "bootstrap/" \
+          --exclude "etc/" \
           --exclude ".DS_Store" \
           --exclude "sync.sh" \
           --exclude "README.md" \
