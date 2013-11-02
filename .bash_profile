@@ -1,17 +1,18 @@
-# load in additional dotfiles
+# Load in additional dotfiles
 declare -a dotfiles=(
-    "path"
-    "bash_prompt"
-    "exports"
-    "aliases"
-    "functions"
-    "bash_local"
+    "$HOME/.path"
+    "$HOME/.bash_prompt"
+    "$HOME/.exports"
+    "$HOME/.aliases"
+    "$HOME/.functions"
+    "$HOME/.bash_local"
 )
 
+# If these files are readable, source them
 for dotfile in ${dotfiles[*]}
 do
-    if [ -r ".$dotfile" ]; then
-        source ".$dotfile"
+    if [[ -r "$dotfile" ]]; then
+        source "$dotfile"
     fi
 done
 
