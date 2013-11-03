@@ -33,6 +33,7 @@ brew install php55-xdebug
 brew install phpdocumentor
 brew install php-cs-fixer
 brew install composer
+brew install box
 
 # Install a DB for when we need to work quick and dirty (locally)
 brew install mariadb
