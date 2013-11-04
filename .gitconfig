@@ -15,7 +15,7 @@
     co = commit -m
     pa = push --all
     pom = push origin master
-    pod = push origin master
+    pod = push origin develop
     go = checkout
     a = add
     aa = add .
