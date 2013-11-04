@@ -4,7 +4,7 @@ My OS X dotfiles
 
 ## Installation
 
-Clone this repository to a suitable location and `cd` into it.
+Clone this repository to a suitable location (i use `~/Project/dotfiles`) and `cd` into it.
 
 ```bash
 git clone https://github.com/mike182uk/dotfiles.git && cd dotfiles
@@ -16,9 +16,13 @@ Run the sync script.
 . sync.sh
 ```
 
+Any time you want to sync any new changes, just navigate to the dotfiles directory and run this script.
+
 ## Local Config / Commands
 
-You should store your local specific conifg / commands in `~/bash_local`. If this file is available, it will be sourced automatically by `~/.bash_profile`. I use this file to set my global git config options:
+You should store your local specific conifg / commands in `~/bash_local`. If this file is available, it will be sourced automatically by `~/.bash_profile`.
+
+I use this file to set my global git config options:
 
 ```bash
 # Git credentials
