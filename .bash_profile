@@ -26,3 +26,6 @@ shopt -s histappend
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
+
+# If possible, add tab completion for many more commands
+[ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion

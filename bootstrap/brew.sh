@@ -12,6 +12,7 @@ brew tap josegonzalez/homebrew-php
 
 # Install Bash 4
 brew install bash
+brew install bash-completion
 
 # Install misc binaries
 brew install coreutils # Install GNU core utilities (those that come with OS X are outdated)
