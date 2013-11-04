@@ -28,7 +28,7 @@ shopt -s histappend
 shopt -s cdspell
 
 # If possible, add tab completion for many more commands
-[ -f "/usr/local/etc/bash_completion" ] && source "/usr/local/etc/bash_completion
+[ -f "$(brew --prefix)/etc/bash_completion" ] && source "$(brew --prefix)/etc/bash_completion"
 
 # Load in Z
 source "$(brew --prefix)/etc/profile.d/z.sh"
