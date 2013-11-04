@@ -43,5 +43,8 @@ brew install mariadb
 brew install node
 brew install mongo
 
+# Install misc utils
+brew install z
+
 # Remove outdated versions from the cellar
 brew cleanup
