@@ -32,3 +32,6 @@ shopt -s cdspell
 
 # Load in Z
 source "$(brew --prefix)/etc/profile.d/z.sh"
+
+# Init rbenv
+eval "$(rbenv init -)"
