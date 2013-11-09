@@ -15,8 +15,6 @@ alias h="cd ~"
 
 # Misc shortcuts
 alias g="git"
-alias v="vagrant"
-alias c="composer"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
