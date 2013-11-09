@@ -8,6 +8,7 @@ brew upgrade
 
 # Add additional taps
 brew tap homebrew/dupes
+brew tap homebrew/completions
 brew tap josegonzalez/homebrew-php
 
 # Install Bash 4
@@ -49,6 +50,9 @@ brew install ruby-build
 
 # Install misc utils
 brew install z
+
+# Install misc completions
+brew install vagrant-completion
 
 # Remove outdated versions from the cellar
 brew cleanup
