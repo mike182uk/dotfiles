@@ -15,6 +15,7 @@ alias h="cd ~"
 
 # Misc shortcuts
 alias g="git"
+complete -o default -o nospace -F _git g # Autocompletion for git alias
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
