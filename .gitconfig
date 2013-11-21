@@ -19,6 +19,8 @@
     go = checkout
     a = add
     aa = add .
+[push]
+    default = current
 # Use Kaleidoscope for diff + merge
 [difftool "Kaleidoscope"]
     cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
