@@ -17,7 +17,6 @@ brew install bash-completion
 
 # Install misc binaries
 brew install coreutils # Install GNU core utilities (those that come with OS X are outdated)
-echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 brew install findutils # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install wget --enable-iri # Install wget with IRI support
 brew install ack
@@ -29,9 +28,9 @@ brew install git
 
 # Install PHP Stuff
 brew install php55
-echo "Don’t forget to add $(brew --prefix josegonzalez/php/php55)/bin to \$PATH."
 brew install php55-mcrypt
 brew install php55-xdebug
+brew install php55-xhprof
 brew install phpdocumentor
 brew install php-cs-fixer
 brew install composer
