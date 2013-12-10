@@ -10,6 +10,6 @@ npm install -g nodemon
 npm install -g jshint
 npm install -g yo
 
-# yeoman generators
+# install yeoman generators
 npm install -g generator-webapp
 npm install -g generator-angular
