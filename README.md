@@ -40,12 +40,14 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 ## Bootstrap Scripts
 
-In the bootstrap directory there are a couple of scripts to bootstrap the system (install packages / configure system).
+In the bootstrap directory there are a couple of scripts to bootstrap the system (install packages / configure system etc).
 
 - `brew.sh` - Installs and updates homebrew formulae
-- `pear.sh` - Installs and updates pear packages
+- `gems.sh` - Installs and updates ruby gems
 - `npm.sh` - Installs and updates node packages
 - `osx.sh` - Sets sensible OS X defaults
+- `pear.sh` - Installs and updates pear packages
+- `vagrant.sh` - Installs useful vagrant plugins
 
 ## Miscellaneous
 
