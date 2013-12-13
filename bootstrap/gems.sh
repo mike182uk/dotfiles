@@ -3,6 +3,9 @@
 # Upgrade any already-installed gems
 gem update --system
 
+# Install bundler
+gem install bundler
+
 # Install sass + compass
 gem install sass
 gem install compass
