@@ -46,6 +46,7 @@ brew install mongo
 # Install ruby stuff
 brew install rbenv
 brew install ruby-build
+brew install rbenv-gemset
 
 # Install misc utils
 brew install z
