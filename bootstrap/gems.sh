@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Upgrade any already-installed gems
+# Upgrade Rubygems
 gem update --system
+
+# Upgrade any already-installed gems
+gem update
 
 # Install bundler
 gem install bundler
