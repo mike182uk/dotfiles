@@ -16,3 +16,4 @@ gem install compass
 # Install chef + related utilities
 gem install chef
 gem install librarian-chef
+gem install knife-solo
