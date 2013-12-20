@@ -20,7 +20,7 @@ Any time you want to sync any new changes, just navigate to the dotfiles directo
 
 ## Local Config / Commands
 
-You should store your local specific conifg / commands in `~/bash_local`. If this file is available, it will be sourced automatically by `~/.bash_profile`.
+You should store your local specific conifg / commands in `~/.bash_local`. If this file is available, it will be sourced automatically by `~/.bash_profile`.
 
 I use this file to set my global git config options:
 
