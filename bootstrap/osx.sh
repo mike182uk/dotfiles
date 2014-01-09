@@ -178,6 +178,11 @@ chflags nohidden ~/Library
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
+# Set ~/ as the default location for new Finder windows
+# For other paths, use `PfLo` and `file:///full/path/here/`
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
