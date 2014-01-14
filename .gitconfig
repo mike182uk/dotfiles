@@ -23,5 +23,8 @@
     go = checkout
     a = add
     aa = add .
+    m = merge
 [push]
     default = current
+[merge]
+    ff = false
