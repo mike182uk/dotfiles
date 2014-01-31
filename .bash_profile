@@ -35,6 +35,3 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 
 # Init rbenv
 eval "$(rbenv init -)"
-
-# Set Java home
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.6)"
