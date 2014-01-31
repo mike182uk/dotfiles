@@ -105,3 +105,18 @@ function o() {
     fi
 }
 
+# setup a phpspec project
+function tdd() {
+    echo '{
+    "require-dev": {
+        "phpspec/phpspec": "2.0.*@dev"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {"psr-0": {"": "src"}}
+}' > composer.json
+
+    composer install --dev
+}
+
