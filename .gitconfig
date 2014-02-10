@@ -28,5 +28,3 @@
     m = merge
 [push]
     default = current
-[merge]
-    ff = false
