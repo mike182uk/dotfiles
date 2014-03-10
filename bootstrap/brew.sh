@@ -9,7 +9,9 @@ brew upgrade
 # Add additional taps
 brew tap homebrew/dupes
 brew tap homebrew/completions
+brew tap homebrew/versions
 brew tap josegonzalez/homebrew-php
+brew tap mcuadros/homebrew-hhvm
 
 # Install Bash 4
 brew install bash
@@ -35,6 +37,7 @@ brew install phpdocumentor
 brew install php-cs-fixer
 brew install composer
 brew install box
+brew install hhvm --HEAD --with-mariadb
 
 # Install a DB for when we need to work quick and dirty (locally)
 brew install mariadb
