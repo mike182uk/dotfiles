@@ -46,6 +46,9 @@ brew install mariadb
 brew install node
 brew install mongo
 
+# Install redis
+brew install redis
+
 # Install ruby stuff
 brew install rbenv
 brew install ruby-build
