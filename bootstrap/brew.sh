@@ -53,6 +53,7 @@ brew install redis
 brew install rbenv
 brew install ruby-build
 brew install rbenv-gem-rehash
+brew install rbenv-bundler
 
 # Install misc utils
 brew install z
