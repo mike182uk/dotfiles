@@ -34,10 +34,16 @@ brew install php55-mcrypt
 brew install php55-xdebug
 brew install php55-xhprof
 brew install phpdocumentor
+brew install phpunit
 brew install php-cs-fixer
 brew install composer
 brew install box
 brew install hhvm --HEAD --with-mariadb
+brew install php-code-sniffer
+brew install phpmd
+brew install phploc
+brew install phpcpd
+brew install pdepend
 
 # Install a DB for when we need to work quick and dirty (locally)
 brew install mariadb
