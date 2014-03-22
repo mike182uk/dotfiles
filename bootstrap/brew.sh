@@ -12,6 +12,7 @@ brew tap homebrew/completions
 brew tap homebrew/versions
 brew tap josegonzalez/homebrew-php
 brew tap mcuadros/homebrew-hhvm
+brew tap phinze/cask
 
 # Install Bash 4
 brew install bash
@@ -24,6 +25,9 @@ brew install wget --enable-iri # Install wget with IRI support
 brew install ack
 brew install homebrew/dupes/grep
 brew install tree
+
+# Install brew cask
+brew install brew-cask
 
 # Install GIT
 brew install git
