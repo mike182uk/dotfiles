@@ -24,6 +24,7 @@ brew install wget --enable-iri # Install wget with IRI support
 brew install ack
 brew install homebrew/dupes/grep
 brew install tree
+brew install homebrew/dupes/tidy
 
 # Install GIT
 brew install git
