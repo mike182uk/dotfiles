@@ -25,6 +25,7 @@ brew install wget --enable-iri # Install wget with IRI support
 brew install ack
 brew install homebrew/dupes/grep
 brew install tree
+brew install homebrew/dupes/tidy
 
 # Install brew cask
 brew install brew-cask
@@ -38,10 +39,16 @@ brew install php55-mcrypt
 brew install php55-xdebug
 brew install php55-xhprof
 brew install phpdocumentor
+brew install phpunit
 brew install php-cs-fixer
 brew install composer
 brew install box
 brew install hhvm --HEAD --with-mariadb
+brew install php-code-sniffer
+brew install phpmd
+brew install phploc
+brew install phpcpd
+brew install pdepend
 
 # Install a DB for when we need to work quick and dirty (locally)
 brew install mariadb
@@ -57,6 +64,7 @@ brew install redis
 brew install rbenv
 brew install ruby-build
 brew install rbenv-gem-rehash
+brew install rbenv-bundler
 
 # Install misc utils
 brew install z
