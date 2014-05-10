@@ -13,6 +13,7 @@ brew tap homebrew/versions
 brew tap josegonzalez/homebrew-php
 brew tap mcuadros/homebrew-hhvm
 brew tap phinze/cask
+brew tap homebrew/binary
 
 # Install Bash 4
 brew install bash
@@ -65,6 +66,9 @@ brew install rbenv
 brew install ruby-build
 brew install rbenv-gem-rehash
 brew install rbenv-bundler
+
+# Install packer
+brew install packer
 
 # Install misc utils
 brew install z
