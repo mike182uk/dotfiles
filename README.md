@@ -52,6 +52,6 @@ In the bootstrap directory there are a couple of scripts to bootstrap the system
 ## Binaries
 Any binaries that are not installed globally can be added to the bin directroy. This directory is automatically added to `$PATH` in `.paths`.
 
-## Miscellaneous
+## Preferences
 
-The `etc` directory contains other miscellaneous files (specific config files for apps etc).
+The `preferences` directory contains app specific settings and preferences.
