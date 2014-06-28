@@ -16,6 +16,9 @@ alias h="cd ~"
 # Misc shortcuts
 alias g="git"
 complete -o default -o nospace -F _git g # Autocompletion for git alias
+alias e="$EDITOR"
+alias v="vagrant"
+complete -o default -o nospace -F _vagrant v # Autocompletion for vagrant alias
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -47,11 +50,11 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to pasteboard.'"
 
 # Quickly view / edit my SSH config
-alias sshconf="cat ~/.ssh/config"
-alias esshconf="vi ~/.ssh/config"
+alias sshconf='cat ~/.ssh/config'
+alias esshconf='e ~/.ssh/config'
 
 # Flush DNS cache
-alias flushdns="dscacheutil -flushcache"
+alias flushdns='dscacheutil -flushcache'
 
 # Get week number
 alias week='date +%V'
