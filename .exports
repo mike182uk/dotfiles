@@ -13,3 +13,6 @@ export MANPAGER="less -X"
 
 # Prefer UK English and use UTF-8
 export LANG="en_GB.UTF-8"
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto";
