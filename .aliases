@@ -73,3 +73,7 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
+
+# BDD shortcuts
+alias bhat='./bin/behat'
+alias spec='./bin/phpspec'

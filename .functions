@@ -126,4 +126,6 @@ function bdd() {
 }' > composer.json
 
     composer install --dev
+
+    ./bin/behat --init
 }
