@@ -75,5 +75,8 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # BDD shortcuts
-alias bhat='./bin/behat'
-alias spec='./bin/phpspec'
+alias bhat='behat'
+alias spec='phpspec'
+
+# Symfony shortcut
+alias sf='./app/console'

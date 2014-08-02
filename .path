@@ -11,6 +11,8 @@ declare -a append_paths=(
     "$(brew --prefix php55)/bin" # Add brew installed PHP bin (for PEAR packages)
     "$(brew --prefix coreutils)/libexec/gnubin" # Add brew-installed GNU core utilities bin
     "$(brew --prefix)/share/npm/bin" # Add npm-installed package bin
+    "./vendor/bin" # Add composer app bin
+    "./bin" # Add project bin
 )
 
 # Prepend directories to PATH
