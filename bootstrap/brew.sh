@@ -28,8 +28,9 @@ brew install homebrew/dupes/grep
 brew install tree
 brew install homebrew/dupes/tidy
 
-# Install Tmux
+# Install Tmux stuff
 brew install tmux
+brew install reattach-to-user-namespace
 
 # Install brew cask
 brew install brew-cask
