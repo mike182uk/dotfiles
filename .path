@@ -13,6 +13,7 @@ declare -a append_paths=(
     "$(brew --prefix)/share/npm/bin" # Add npm-installed package bin
     "./vendor/bin" # Add composer app bin
     "./bin" # Add project bin
+    "./.powerline/scripts" # Add powerline scripts
 )
 
 # Prepend directories to PATH
