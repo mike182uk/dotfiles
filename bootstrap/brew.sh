@@ -28,7 +28,7 @@ brew install homebrew/dupes/grep
 brew install tree
 brew install homebrew/dupes/tidy
 
-# Install Tmux stuff
+# Install tmux stuff
 brew install tmux
 brew install reattach-to-user-namespace
 
@@ -70,6 +70,10 @@ brew install rbenv
 brew install ruby-build
 brew install rbenv-gem-rehash
 brew install rbenv-bundler
+
+# Install python stuff
+brew install python
+brew install python3
 
 # Install packer
 brew install packer
