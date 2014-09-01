@@ -3,31 +3,32 @@
     "segments": {
         "right": [
             {
+                "function": "now_playing",
                 "args": {
                     "player": "spotify"
-                },
-                "name": "now_playing"
+                }
             },
             {
+                "function": "date",
                 "args": {
                     "format": "%a %d/%m/%y"
                 },
-                "before": "",
-                "name": "date"
+                "before": ""
             },
             {
+                "function": "date",
+                "name": "time",
                 "args": {
                     "format": "%H:%M",
                     "istime": true
                 },
-                "before": "",
-                "name": "date"
+                "before": ""
             },
             {
-                "name": "external_ip"
+                "function": "external_ip"
             },
             {
-                "name": "battery"
+                "function": "battery"
             }
         ]
     }
