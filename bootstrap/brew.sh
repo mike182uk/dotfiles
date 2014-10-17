@@ -39,10 +39,10 @@ brew install brew-cask
 brew install git
 
 # Install PHP Stuff
-brew install php55
-brew install php55-mcrypt
-brew install php55-xdebug
-brew install php55-xhprof
+brew install php56
+brew install php56-mcrypt
+brew install php56-xdebug
+brew install php56-xhprof
 brew install phpdocumentor
 brew install phpunit
 brew install php-cs-fixer
