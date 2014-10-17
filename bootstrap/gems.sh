@@ -30,3 +30,6 @@ gem install berkshelf
 gem install chefspec
 gem install fauxhai
 gem install foodcritic
+
+# Install misc utilities
+gem install tmuxinator
