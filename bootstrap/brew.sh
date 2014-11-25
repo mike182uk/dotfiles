@@ -80,6 +80,7 @@ brew install packer
 
 # Install misc utils
 brew install z
+brew install ngrok
 
 # Install misc completions
 brew install vagrant-completion
