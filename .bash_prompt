@@ -8,8 +8,8 @@ elif infocmp xterm-256color >/dev/null 2>&1; then
 fi
 
 # Example:
-# user@host: ~/.dotfiles on master [+!?$]
-# $
+# user@host ~/.dotfiles (master) [+!?$]
+# →
 
 prompt_git() {
     local s=""
@@ -55,7 +55,7 @@ prompt_git() {
 
         [ -n "$s" ] && s=" [$s]"
 
-        printf "%s" "$1$branchName$s"
+        printf "%s" "$1($branchName)$s"
     else
         return
     fi
@@ -131,12 +131,11 @@ set_prompts() {
     PS1+="\n" # newline
     PS1+="\[$userStyle\]\u" # username
     PS1+="\[$reset$white\]@"
-    PS1+="\[$hostStyle\]\h" # host
-    PS1+="\[$reset$white\]: "
-    PS1+="\[$green\]\w" # working directory
-    PS1+="\$(prompt_git \"$white on $cyan\")" # git repository details
-    PS1+="\n"
-    PS1+="\[$reset$white\]\$ \[$reset\]" # $ (and reset color)
+    PS1+="\[$hostStyle\]\h " # host
+    PS1+="\[$green\]\w " # working directory
+    PS1+="\$(prompt_git \"$cyan\")" # git repository details
+    PS1+="\n" # newline
+    PS1+="\[$white\]→ \[$reset\]"
 
     export PS1
 }
