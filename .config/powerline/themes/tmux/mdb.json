@@ -1,22 +1,15 @@
 {
-    "default_module": "powerline.segments.common",
     "segments": {
         "right": [
             {
-                "function": "now_playing",
-                "args": {
-                    "player": "spotify"
-                }
-            },
-            {
-                "function": "date",
+                "function": "powerline.segments.common.time.date",
                 "args": {
                     "format": "%a %d/%m/%y"
                 },
                 "before": ""
             },
             {
-                "function": "date",
+                "function": "powerline.segments.common.time.date",
                 "name": "time",
                 "args": {
                     "format": "%H:%M",
@@ -25,10 +18,13 @@
                 "before": ""
             },
             {
-                "function": "external_ip"
+                "function": "powerline.segments.common.net.external_ip"
             },
             {
-                "function": "battery"
+                "function": "powerline.segments.common.bat.battery"
+            },
+            {
+                "function": "powerline.segments.common.net.hostname"
             }
         ]
     }

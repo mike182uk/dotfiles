@@ -1,8 +1,7 @@
 {
     "ext": {
         "tmux": {
-            "colorscheme": "mike",
-            "theme": "mike"
+            "theme": "mdb"
         }
     }
 }
