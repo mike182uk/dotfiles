@@ -40,12 +40,14 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 In the bootstrap directory there are a couple of scripts to bootstrap the system (install packages / configure system etc).
 
+- `brew-cask.sh` - Installs mac os x apps via brew cask
 - `brew.sh` - Installs and updates homebrew formulae
 - `gems.sh` - Installs and updates ruby gems
 - `npm.sh` - Installs and updates node packages
 - `osx.sh` - Sets sensible OS X defaults
-- `pear.sh` - Installs and updates pear packages
+- `pip.sh` - Installs python packages
 - `vagrant.sh` - Installs useful vagrant plugins
+- `vim.sh` - Installs vim plugins
 
 ## Binaries
 Any binaries that are not installed globally can be added to the bin directroy. This directory is automatically added to `$PATH` in `.paths`.
