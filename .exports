@@ -16,3 +16,6 @@ export LANG="en_GB.UTF-8"
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto";
+
+# Python site packages path
+export PYTHON_SITE_PACKAGES_PATH=$(python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")
