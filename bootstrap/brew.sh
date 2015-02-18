@@ -81,6 +81,7 @@ brew install packer
 # Install misc utils
 brew install z
 brew install ngrok
+brew install wifi-password
 
 # Install misc completions
 brew install vagrant-completion
