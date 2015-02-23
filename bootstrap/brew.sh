@@ -82,6 +82,7 @@ brew install packer
 brew install z
 brew install ngrok
 brew install wifi-password
+brew install ffmpeg
 
 # Install misc completions
 brew install vagrant-completion
