@@ -83,6 +83,7 @@ brew install z
 brew install ngrok
 brew install wifi-password
 brew install ffmpeg
+brew install httpie
 
 # Install misc completions
 brew install vagrant-completion
