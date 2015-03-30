@@ -46,8 +46,31 @@ In the bootstrap directory there are a couple of scripts to bootstrap the system
 - `npm.sh` - Installs and updates node packages
 - `osx.sh` - Sets sensible OS X defaults
 - `pip.sh` - Installs python packages
+- `sublime-text.sh` - Sets up sublime text
 - `vagrant.sh` - Installs useful vagrant plugins
 - `vim.sh` - Installs vim plugins
+
+#### sublime-text.sh
+
+The Sublime Text bootstrap script performs the following tasks:
+
+- Installs `subl` binary to `/usr/local/bin`
+- Installs a nicer dock icon
+- Creates a symlink for the user preferences
+
+Navigate to boostrap directory and run
+
+```
+./sublime-text.sh <path-to-sync-directory>
+```
+
+The sync directory is a directory where you keep your Sublime Text user preferences (normally found at `/Users/<user>/Library/Application Support/Sublime Text 3/Packages/User`).
+
+I currently store my Sublime Text user preferences in my dropbox, so i would run the command like this:
+
+```
+./sublime-text.sh ~/Dropbox/sublime/preferences
+```
 
 ## Binaries
 Any binaries that are not installed globally can be added to the bin directroy. This directory is automatically added to `$PATH` in `.paths`.
