@@ -75,6 +75,10 @@ brew install rbenv-bundler
 brew install python
 brew install python3
 
+# Install docker stuff
+brew install docker
+brew install docker-compose
+
 # Install packer
 brew install packer
 
