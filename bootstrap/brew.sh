@@ -78,6 +78,7 @@ brew install python3
 # Install docker stuff
 brew install docker
 brew install docker-compose
+brew install docker-machine
 
 # Install packer
 brew install packer
