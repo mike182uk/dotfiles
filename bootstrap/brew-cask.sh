@@ -7,6 +7,7 @@ brew cask install chefdk
 brew cask install dash
 brew cask install dropbox
 brew cask install firefox
+brew cask install flux
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install lastfm
