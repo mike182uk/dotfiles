@@ -28,6 +28,6 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install vmware-fusion
 brew cask install vlc
-brew cask install webstrom
+brew cask install webstorm
 
 brew cask cleanup
