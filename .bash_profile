@@ -35,3 +35,6 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 
 # Init rbenv
 eval "$(rbenv init -)"
+
+# Init nvm
+source $(brew --prefix nvm)/nvm.sh

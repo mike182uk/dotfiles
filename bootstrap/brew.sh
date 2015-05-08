@@ -58,8 +58,10 @@ brew install pdepend
 # Install a DB for when we need to work quick and dirty (locally)
 brew install mariadb
 
-# Install node and mongo
-brew install node
+# Install node stuff
+brew install nvm
+
+# Install mongo
 brew install mongo
 
 # Install redis
