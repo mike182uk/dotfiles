@@ -10,8 +10,6 @@ brew upgrade
 brew tap homebrew/dupes
 brew tap homebrew/completions
 brew tap homebrew/versions
-brew tap josegonzalez/homebrew-php
-brew tap mcuadros/homebrew-hhvm
 brew tap phinze/cask
 brew tap homebrew/binary
 
@@ -39,21 +37,8 @@ brew install brew-cask
 brew install git
 
 # Install PHP Stuff
-brew install php56
-brew install php56-mcrypt
-brew install php56-xdebug
-brew install php56-xhprof
-brew install phpdocumentor
-brew install phpunit
-brew install php-cs-fixer
 brew install composer
 brew install box
-brew install hhvm --HEAD --with-mariadb
-brew install php-code-sniffer
-brew install phpmd
-brew install phploc
-brew install phpcpd
-brew install pdepend
 
 # Install a DB for when we need to work quick and dirty (locally)
 brew install mariadb

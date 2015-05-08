@@ -38,3 +38,6 @@ eval "$(rbenv init -)"
 
 # Init nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# Init phpbrew
+source "$HOME/.phpbrew/bashrc"
