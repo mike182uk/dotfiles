@@ -4,7 +4,7 @@
 brew update
 
 # Upgrade any already-installed formulae
-brew upgrade
+brew upgrade --all
 
 # Add additional taps
 brew tap homebrew/dupes
