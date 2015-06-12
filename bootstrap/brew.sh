@@ -37,8 +37,8 @@ brew install brew-cask
 brew install git
 
 # Install PHP Stuff
-brew install composer
-brew install box
+brew install composer --ignore-dependencies
+brew install box --ignore-dependencies
 
 # Install a DB for when we need to work quick and dirty (locally)
 brew install mariadb
