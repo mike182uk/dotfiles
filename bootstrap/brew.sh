@@ -25,6 +25,7 @@ brew install ack
 brew install homebrew/dupes/grep
 brew install tree
 brew install homebrew/dupes/tidy
+brew install bison
 
 # Install tmux stuff
 brew install tmux
@@ -80,6 +81,9 @@ brew install ssh-copy-id
 
 # Install misc completions
 brew install vagrant-completion
+
+# Add symlinks for binaries that aren't linked automatically
+brew link bison --force
 
 # Remove outdated versions from the cellar
 brew cleanup
