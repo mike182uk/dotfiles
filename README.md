@@ -45,6 +45,7 @@ In the bootstrap directory there are a couple of scripts to bootstrap the system
 - `gems.sh` - Installs and updates ruby gems
 - `npm.sh` - Installs and updates node packages
 - `osx.sh` - Sets sensible OS X defaults
+- `phpbrew.sh` - Installs PHP
 - `pip.sh` - Installs python packages
 - `sublime-text.sh` - Sets up sublime text
 - `vagrant.sh` - Installs useful vagrant plugins
