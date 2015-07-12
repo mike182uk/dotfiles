@@ -10,8 +10,8 @@ brew upgrade --all
 brew tap homebrew/dupes
 brew tap homebrew/completions
 brew tap homebrew/versions
-brew tap phinze/cask
 brew tap homebrew/binary
+brew tap caskroom/fonts
 
 # Install Bash 4
 brew install bash
@@ -81,6 +81,9 @@ brew install ssh-copy-id
 
 # Install misc completions
 brew install vagrant-completion
+
+# Install cask stuff
+brew install caskroom/cask/brew-cask
 
 # Add symlinks for binaries that aren't linked automatically
 brew link bison --force
