@@ -10,6 +10,7 @@ npm install -g jshint
 npm install -g grunt-cli
 npm install -g gulp
 npm install -g nodemon
+npm install -g travis-encrypt
 npm install -g yo
 
 # install yeoman generators
