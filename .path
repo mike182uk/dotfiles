@@ -10,9 +10,13 @@ declare -a append_paths=(
     "$HOME/bin"
     "$(brew --prefix coreutils)/libexec/gnubin" # Add brew-installed GNU core utilities bin
     "$(brew --prefix)/share/npm/bin" # Add npm-installed package bin
-    "./vendor/bin" # Add composer app bin
-    "./bin" # Add project bin
-    "./node_modules/.bin" # Add node app bin
+)
+
+# Project directories to be appended to PATH
+declare -a append_paths_projects=(
+  "./bin" # Add project bin
+  "./vendor/bin" # Add composer app bin
+  "./node_modules/.bin" # Add node app bin
 )
 
 # Prepend directories to PATH
@@ -29,6 +33,12 @@ do
     if [ -d "$p" ]; then
         PATH="$PATH:$p"
     fi
+done
+
+# Append project directories to PATH
+for p in ${append_paths_projects[*]}
+do
+  PATH="$PATH:$p"
 done
 
 unset prepend_paths append_paths
