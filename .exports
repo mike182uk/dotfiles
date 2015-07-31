@@ -24,7 +24,7 @@ export PYTHON_SITE_PACKAGES_PATH=$(python -c "from distutils.sysconfig import ge
 export NVM_DIR=~/.nvm
 
 # Enable persistent REPL history for node
-NODE_REPL_HISTORY_FILE=~/.node_history;
+export NODE_REPL_HISTORY_FILE=~/.node_history;
 
 # Allow 32³ entries; the default is 1000
-NODE_REPL_HISTORY_SIZE='32768';
+export NODE_REPL_HISTORY_SIZE='32768';
