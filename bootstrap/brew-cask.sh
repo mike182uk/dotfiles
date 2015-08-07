@@ -4,13 +4,16 @@ brew cask install 1password
 brew cask install alfred
 brew cask install atom
 brew cask install chefdk
+brew cask install cleanmymac
 brew cask install dash
 brew cask install dropbox
 brew cask install firefox
 brew cask install flux
 brew cask install google-chrome
 brew cask install iterm2
+brew cask install keepingyouawake
 brew cask install lastfm
+brew cask install licecap
 brew cask install little-snitch
 brew cask install mou
 brew cask install mysqlworkbench
