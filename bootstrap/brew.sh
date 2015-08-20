@@ -63,11 +63,6 @@ brew install rbenv-bundler
 brew install python
 brew install python3
 
-# Install docker stuff
-brew install docker
-brew install docker-compose
-brew install docker-machine
-
 # Install packer
 brew install packer
 
@@ -81,6 +76,7 @@ brew install ssh-copy-id
 
 # Install misc completions
 brew install vagrant-completion
+brew install docker-completion
 
 # Install cask stuff
 brew install caskroom/cask/brew-cask

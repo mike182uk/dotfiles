@@ -6,6 +6,7 @@ brew cask install atom
 brew cask install chefdk
 brew cask install cleanmymac
 brew cask install dash
+brew cask install dockertoolbox
 brew cask install dropbox
 brew cask install firefox
 brew cask install flux
