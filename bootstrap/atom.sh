@@ -18,12 +18,12 @@ BACKUP_LOCATION="$USER_PREFERENCES_PATH/Backup$(date +%s)"
 mkdir "$BACKUP_LOCATION"
 
 declare -a preferenceFiles=(
-    "config.cson"
-    "init.coffee"
-    "keymap.cson"
-    "packages.cson"
-    "snippets.cson"
-    "styles.less"
+  "config.cson"
+  "init.coffee"
+  "keymap.cson"
+  "packages.cson"
+  "snippets.cson"
+  "styles.less"
 )
 
 for preferenceFile in ${preferenceFiles[*]}

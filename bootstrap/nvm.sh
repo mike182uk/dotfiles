@@ -7,4 +7,4 @@ nvm install stable
 nvm install iojs
 
 # Use iojs as the default node version
-nvm alias default iojs
+nvm alias default stable

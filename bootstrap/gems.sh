@@ -22,14 +22,5 @@ gem install capistrano
 gem install sass
 gem install compass
 
-# Install chef + related utilities
-gem install chef
-gem install knife-solo
-gem install librarian-chef
-gem install berkshelf
-gem install chefspec
-gem install fauxhai
-gem install foodcritic
-
 # Install misc utilities
 gem install tmuxinator
