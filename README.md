@@ -1,4 +1,4 @@
-#Dotfiles
+# Dotfiles
 
 ## Installation
 
@@ -40,8 +40,10 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 In the bootstrap directory there are a couple of scripts to bootstrap the system (install packages / configure system etc).
 
+- `atom.sh` - Sets up atom
 - `brew-cask.sh` - Installs mac os x apps via brew cask
 - `brew.sh` - Installs and updates homebrew formulae
+- `fonts.sh` - Installs fonts
 - `gems.sh` - Installs and updates ruby gems
 - `npm.sh` - Installs and updates node packages
 - `nvm.sh` - Installs node via nvm
@@ -61,7 +63,7 @@ The Sublime Text bootstrap script performs the following tasks:
 - Installs a nicer dock icon
 - Creates a symlink for the user preferences
 
-Navigate to boostrap directory and run
+Navigate to bootstrap directory and run
 
 ```
 ./sublime-text.sh <path-to-sync-directory>
@@ -73,6 +75,26 @@ I currently store my Sublime Text user preferences in my dropbox, so i would run
 
 ```
 ./sublime-text.sh ~/Dropbox/sublime/preferences
+```
+
+#### atom.sh
+
+The Atom bootstrap script performs the following tasks:
+
+- Creates a symlink for the user preferences
+
+Navigate to bootstrap directory and run
+
+```
+./atom.sh <path-to-sync-directory>
+```
+
+The sync directory is a directory where you keep your Atom user preferences (normally found at `~/.atom`).
+
+I currently store my Atom user preferences in my dropbox, so i would run the command like this:
+
+```
+./atom.sh ~/Dropbox/atom/preferences
 ```
 
 ## Binaries
