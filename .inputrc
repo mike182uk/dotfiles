@@ -9,3 +9,7 @@ set completion-query-items 200
 
 # Show extra file information when completing, like `ls -F` does
 set visible-stats on
+
+# Use shift arrow to navigate between words
+"\e[1;2C": forward-word
+"\e[1;2D": backward-word
