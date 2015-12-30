@@ -12,6 +12,7 @@ brew tap homebrew/completions
 brew tap homebrew/versions
 brew tap homebrew/binary
 brew tap caskroom/fonts
+brew tap tldr-pages/tldr
 
 # Install Bash 4
 brew install bash
@@ -73,6 +74,7 @@ brew install wifi-password
 brew install ffmpeg
 brew install httpie
 brew install ssh-copy-id
+brew install tldr
 
 # Install misc completions
 brew install vagrant-completion
