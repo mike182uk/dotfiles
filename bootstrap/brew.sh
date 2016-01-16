@@ -13,6 +13,7 @@ brew tap homebrew/versions
 brew tap homebrew/binary
 brew tap caskroom/fonts
 brew tap tldr-pages/tldr
+brew tap argon/mas
 
 # Install Bash 4
 brew install bash
@@ -74,6 +75,7 @@ brew install wifi-password
 brew install ffmpeg
 brew install fzf
 brew install httpie
+brew install mas
 brew install ssh-copy-id
 brew install tldr
 
