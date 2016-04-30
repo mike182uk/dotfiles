@@ -70,7 +70,6 @@ brew install packer
 
 # Install misc utils
 brew install z
-brew install ngrok
 brew install wifi-password
 brew install ffmpeg
 brew install fzf
