@@ -21,6 +21,7 @@ declare -a preferenceFiles=(
   "config.cson"
   "init.coffee"
   "keymap.cson"
+  "packages.cson"
   "snippets.cson"
   "styles.less"
 )
