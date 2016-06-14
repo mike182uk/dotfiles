@@ -94,38 +94,3 @@ function o() {
         open "$@"
     fi
 }
-
-# setup a phpspec project
-function tdd() {
-    echo '{
-    "require-dev": {
-        "phpspec/phpspec": "~2.0",
-        "bossa/phpspec2-expect": "~1.0"
-    },
-    "config": {
-        "bin-dir": "bin"
-    },
-    "autoload": {"psr-0": {"": "src"}}
-}' > composer.json
-
-    composer install --dev
-}
-
-# setup a bdd project
-function bdd() {
-    echo '{
-    "require-dev": {
-        "phpspec/phpspec": "~2.0",
-        "bossa/phpspec2-expect": "~1.0",
-        "behat/behat": "~3.0"
-    },
-    "config": {
-        "bin-dir": "bin"
-    },
-    "autoload": {"psr-0": {"": "src"}}
-}' > composer.json
-
-    composer install --dev
-
-    ./bin/behat --init
-}

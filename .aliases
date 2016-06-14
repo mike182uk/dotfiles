@@ -75,13 +75,6 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
-# BDD shortcuts
-alias bhat='behat'
-alias spec='phpspec'
-
-# Symfony shortcut
-alias sf='./app/console'
-
 # Update installed stuff
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; gem update --system; gem update; phpbrew update; phpbrew self-update; apm upgrade -c false;'
 alias u='update'
