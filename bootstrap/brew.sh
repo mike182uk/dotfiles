@@ -65,6 +65,10 @@ brew install rbenv-bundler
 brew install python
 brew install python3
 
+# Install haskell stuff
+brew install ghc
+brew install cabal-install
+
 # Install packer
 brew install packer
 

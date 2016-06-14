@@ -8,6 +8,7 @@ declare -a prepend_paths=(
 declare -a append_paths=(
     "/usr/bin"
     "$HOME/bin"
+    "$HOME/.cabal/bin" # Add cabal installed utilities
     "$(brew --prefix coreutils)/libexec/gnubin" # Add brew-installed GNU core utilities bin
     "$(brew --prefix)/share/npm/bin" # Add npm-installed package bin
 )
