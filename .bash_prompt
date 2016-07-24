@@ -115,7 +115,7 @@ set_prompts() {
     PS1+="\[$green\]\w " # working directory
     PS1+="\$(prompt_git \"$cyan\")" # git repository details
     PS1+="\n" # newline
-    PS1+="\[$white\]→ \[$reset\]"
+    PS1+="\[$white\]λ \[$reset\]"
 
     export PS1
 }
