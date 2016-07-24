@@ -2,17 +2,17 @@
 
 brew cask install 1password
 brew cask install alfred
-brew cask install alternote
 brew cask install atom
 brew cask install chefdk
 brew cask install cleanmymac
 brew cask install dash
-brew cask install dockertoolbox
+brew cask install docker
 brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
 brew cask install flux
 brew cask install google-chrome
+brew cask install intellij-idea
 brew cask install iterm2
 brew cask install keepingyouawake
 brew cask install lastfm
@@ -29,11 +29,11 @@ brew cask install sourcetree
 brew cask install spectacle
 brew cask install spotify
 brew cask install sublime-text
+brew cask install tunnelbear
 brew cask install transmission
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vmware-fusion
 brew cask install vlc
-brew cask install webstorm
 
 brew cask cleanup
