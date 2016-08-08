@@ -260,8 +260,6 @@ defaults write com.apple.dock mru-spaces -bool false
 
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
-# Remove the animation when hiding/showing the Dock
-defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
@@ -389,6 +387,12 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 # Use the system-native print preview dialog
 defaults write com.google.Chrome DisablePrintPreview -bool true
 defaults write com.google.Chrome.Canary DisablePrintPreview -bool true
+
+###############################################################################
+# Menu Bar                                                                    #
+###############################################################################
+
+defaults write com.apple.menuextra.clock "DateFormat" "EEE d MMM  HH:mm"
 
 ###############################################################################
 # Kill affected applications                                                  #
