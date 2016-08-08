@@ -40,6 +40,7 @@ brew install brew-cask
 brew install git
 
 # Install PHP Stuff
+brew install homebrew/php/phpbrew
 brew install composer --ignore-dependencies
 brew install box --ignore-dependencies
 
