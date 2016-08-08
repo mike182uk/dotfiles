@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Load in NVM
+source $(brew --prefix nvm)/nvm.sh
+
 # Install latest stable version of node
 nvm install stable
 
