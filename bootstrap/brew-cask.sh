@@ -24,6 +24,7 @@ brew cask install ngrok
 brew cask install omnifocus
 brew cask install phpstorm
 brew cask install sequel-pro
+brew case install skype
 brew cask install sonos
 brew cask install sourcetree
 brew cask install spectacle
