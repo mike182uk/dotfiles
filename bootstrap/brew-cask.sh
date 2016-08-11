@@ -18,6 +18,7 @@ brew cask install keepingyouawake
 brew cask install lastfm
 brew cask install licecap
 brew cask install little-snitch
+brew cask install medis
 brew cask install mou
 brew cask install mysqlworkbench
 brew cask install ngrok
