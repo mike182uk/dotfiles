@@ -82,6 +82,7 @@ brew install httpie
 brew install mas
 brew install ssh-copy-id
 brew install tldr
+brew install awscli
 
 # Install misc completions
 brew install vagrant-completion
