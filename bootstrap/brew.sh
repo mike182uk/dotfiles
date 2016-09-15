@@ -83,6 +83,8 @@ brew install mas
 brew install ssh-copy-id
 brew install tldr
 brew install awscli
+brew install makeicns
+brew install svg2png
 
 # Install misc completions
 brew install vagrant-completion
