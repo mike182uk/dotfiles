@@ -20,6 +20,7 @@ npm install -g ntl
 npm install -g plato
 npm install -g spoof
 npm install -g retire
+npm install -g snpt
 npm install -g travis-encrypt
 npm install -g yo
 
