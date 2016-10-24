@@ -36,8 +36,9 @@ brew install reattach-to-user-namespace
 # Install brew cask
 brew install brew-cask
 
-# Install GIT
+# Install GIT stuff
 brew install git
+brew install diff-so-fancy
 
 # Install PHP Stuff
 brew install homebrew/php/phpbrew
