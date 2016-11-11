@@ -1,17 +1,17 @@
 # Directories to be prepended to PATH
 declare -a prepend_paths=(
-    "/usr/local/bin" # Ensure that this bin always takes precedence over `/usr/bin`
-    "/usr/local/sbin"
+  "/usr/local/bin" # Ensure that this bin always takes precedence over `/usr/bin`
+  "/usr/local/sbin"
 )
 
 # Directories to be appended to PATH
 declare -a append_paths=(
-    "/usr/bin"
-    "$HOME/bin"
-    "$HOME/.cabal/bin" # Add cabal installed utilities
-    "$(brew --prefix coreutils)/libexec/gnubin" # Add brew-installed GNU core utilities bin
-    "$(brew --prefix)/share/npm/bin" # Add npm-installed package bin
-    "$HOME/Projects/Go/bin" # Add Go project bins
+  "/usr/bin"
+  "$HOME/bin"
+  "$HOME/.cabal/bin" # Add cabal installed utilities
+  "$(brew --prefix coreutils)/libexec/gnubin" # Add brew-installed GNU core utilities bin
+  "$(brew --prefix)/share/npm/bin" # Add npm-installed package bin
+  "$HOME/Projects/Go/bin" # Add Go project bins
 )
 
 # Project directories to be appended to PATH
@@ -24,17 +24,17 @@ declare -a append_paths_projects=(
 # Prepend directories to PATH
 for p in ${prepend_paths[*]}
 do
-    if [ -d "$p" ]; then
-        PATH="$p:$PATH"
-    fi
+  if [ -d "$p" ]; then
+    PATH="$p:$PATH"
+  fi
 done
 
 # Append directories to PATH
 for p in ${append_paths[*]}
 do
-    if [ -d "$p" ]; then
-        PATH="$PATH:$p"
-    fi
+  if [ -d "$p" ]; then
+    PATH="$PATH:$p"
+  fi
 done
 
 # Append project directories to PATH

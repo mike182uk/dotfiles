@@ -23,7 +23,7 @@ USER_PREFERENCES_PATH="$PACKAGES_PREFERENCES_PATH/User"
 # Install icon
 #
 function installIcon() {
-    cp "resources/sublime-text/Sublime Text.icns" "$APP_RESOURCES_PATH/Sublime Text.icns"
+  cp "resources/sublime-text/Sublime Text.icns" "$APP_RESOURCES_PATH/Sublime Text.icns"
 }
 
 #
