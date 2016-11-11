@@ -74,6 +74,9 @@ brew install cabal-install
 # Install packer
 brew install packer
 
+# Install Go
+brew install go
+
 # Install misc utils
 brew install z
 brew install wifi-password

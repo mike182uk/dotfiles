@@ -11,6 +11,7 @@ alias dl="cd ~/Downloads"
 alias db="cd ~/Dropbox"
 alias d="cd ~/Documents"
 alias p="cd ~/Projects"
+alias gp="cd ~/Projects/Go"
 alias h="cd ~"
 
 # Misc shortcuts

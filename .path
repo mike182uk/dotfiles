@@ -11,6 +11,7 @@ declare -a append_paths=(
     "$HOME/.cabal/bin" # Add cabal installed utilities
     "$(brew --prefix coreutils)/libexec/gnubin" # Add brew-installed GNU core utilities bin
     "$(brew --prefix)/share/npm/bin" # Add npm-installed package bin
+    "$HOME/Projects/Go/bin" # Add Go project bins
 )
 
 # Project directories to be appended to PATH
