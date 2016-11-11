@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 brew cask install 1password
 brew cask install alfred

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Load in NVM
 source $(brew --prefix nvm)/nvm.sh

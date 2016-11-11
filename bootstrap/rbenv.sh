@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Install latest stable version of ruby
 rbenv install 2.3.1

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Install vagrant plugins
 vagrant plugin install vagrant-hostsupdater
