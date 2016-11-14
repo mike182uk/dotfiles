@@ -48,9 +48,6 @@ brew install box --ignore-dependencies
 # Install a DB for when we need to work quick and dirty (locally)
 brew install mariadb
 
-# Install node stuff
-brew install nvm
-
 # Install mongo
 brew install mongo
 

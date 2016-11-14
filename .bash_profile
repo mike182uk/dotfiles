@@ -37,7 +37,8 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 eval "$(rbenv init -)"
 
 # Init nvm
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Init phpbrew
 source "$HOME/.phpbrew/bashrc"
