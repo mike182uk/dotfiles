@@ -14,6 +14,7 @@ brew tap homebrew/binary
 brew tap caskroom/fonts
 brew tap tldr-pages/tldr
 brew tap argon/mas
+brew tap go-delve/delve
 
 # Install Bash 4
 brew install bash
@@ -71,8 +72,9 @@ brew install cabal-install
 # Install packer
 brew install packer
 
-# Install Go
+# Install Go stuff
 brew install go
+brew install delve
 
 # Install misc utils
 brew install z

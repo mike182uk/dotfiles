@@ -11,6 +11,7 @@ apm install editorconfig
 apm install emmet
 apm install file-icons
 apm install git-time-machine
+apm install go-plus
 apm install language-api-blueprint
 apm install language-apache
 apm install language-babel
@@ -24,6 +25,7 @@ apm install line-count-status
 apm install linter
 apm install linter-hlint
 apm install linter-js-standard
+apm install linter-go
 apm install linter-php
 apm install linter-phpcs
 apm install merge-conflicts
