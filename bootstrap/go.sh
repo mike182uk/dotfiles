@@ -10,3 +10,4 @@ go get -u github.com/nsf/gocode
 go get -u github.com/alecthomas/gometalinter
 go get -u github.com/zmb3/gogetdoc
 go get -u github.com/rogpeppe/godef
+go get -u github.com/mitchellh/gox
