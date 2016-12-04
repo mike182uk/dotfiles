@@ -22,5 +22,8 @@ gem install capistrano
 gem install sass
 gem install compass
 
+# Install travis cli
+gem install travis
+
 # Install misc utilities
 gem install tmuxinator
