@@ -1,40 +1,59 @@
 #!/usr/bin/env bash
 
-# update existing packages
+# Update existing packages
 apm update
 
-# install packages
+# Install packages
 apm install atom-beautify
+apm install atom-jade
+apm install autocomplete-modules
+apm install autocomplete-paths
 apm install color-picker
 apm install docblockr
 apm install editorconfig
 apm install emmet
 apm install file-icons
+apm install git-plus
 apm install git-time-machine
+apm install go-debug
 apm install go-plus
-apm install language-api-blueprint
+apm install go-signature-statusbar
+apm install hyperclick
+apm install js-hyperclick
 apm install language-apache
+apm install language-api-blueprint
+apm install language-applescript
 apm install language-babel
+apm install language-cfml
 apm install language-docker
 apm install language-gherkin
+apm install language-haproxy
 apm install language-haskell
 apm install language-nginx
 apm install language-puppet
 apm install language-tmux
 apm install line-count-status
 apm install linter
+apm install linter-coffee-variables
+apm install linter-coffeelint
+apm install linter-golinter
 apm install linter-hlint
 apm install linter-js-standard
-apm install linter-go
+apm install linter-jsonlint
 apm install linter-php
 apm install linter-phpcs
+apm install linter-write-good
 apm install merge-conflicts
 apm install minimap
 apm install minimap-find-and-replace
 apm install minimap-git-diff
+apm install minimap-pigments
 apm install minimap-selection
 apm install package-sync
+apm install pigments
+apm install qolor
 apm install sort-lines
+apm install stacktrace
 apm install tab-control
 apm install todo-show
 apm install wordcount

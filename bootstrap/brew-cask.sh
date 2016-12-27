@@ -19,11 +19,8 @@ brew cask install lastfm
 brew cask install licecap
 brew cask install little-snitch
 brew cask install medis
-brew cask install mou
 brew cask install mysqlworkbench
 brew cask install ngrok
-brew cask install omnifocus
-brew cask install phpstorm
 brew cask install sequel-pro
 brew cask install slack
 brew cask install skype

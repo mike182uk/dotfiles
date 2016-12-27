@@ -47,6 +47,7 @@ In the bootstrap directory there are a couple of scripts to bootstrap the system
 - `fonts.sh` - Installs fonts
 - `gems.sh` - Installs and updates ruby gems
 - `go.sh` - Installs useful Go packages
+- `mas.sh` - Installs mac os x apps via mac app store
 - `npm.sh` - Installs and updates node packages
 - `nvm.sh` - Installs node via nvm
 - `osx.sh` - Sets sensible OS X defaults
