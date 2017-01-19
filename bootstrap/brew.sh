@@ -82,6 +82,7 @@ brew install wifi-password
 brew install ffmpeg
 brew install fzf
 brew install httpie
+brew install jid
 brew install mas
 brew install ssh-copy-id
 brew install tldr
