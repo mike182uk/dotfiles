@@ -89,6 +89,7 @@ brew install tldr
 brew install awscli
 brew install makeicns
 brew install svg2png
+brew install fpp
 
 # Install misc completions
 brew install vagrant-completion
