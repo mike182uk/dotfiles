@@ -7,5 +7,5 @@ export NVM_DIR="$HOME/.nvm"
 # Install latest stable version of node
 nvm install stable
 
-# Use iojs as the default node version
+# Use stable as the default node version
 nvm alias default stable

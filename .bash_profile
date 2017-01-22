@@ -34,7 +34,7 @@ shopt -s cdspell
 source "$(brew --prefix)/etc/profile.d/z.sh"
 
 # Init rbenv
-eval "$(rbenv init -)"
+eval "$($(brew --prefix)/bin/rbenv init -)"
 
 # Init nvm
 export NVM_DIR="$HOME/.nvm"

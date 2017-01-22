@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
-# update npm
+# Update npm
 npm update
 
-# install useful packages globally
+# Install useful packages / utilites globally
 npm install -g bower
 npm install -g complexity-report
+npm install -g cost-of-modules
 npm install -g devtool
-npm install -g eslint
-npm install -g grunt-cli
 npm install -g gulp
 npm install -g localtunnel
 npm install -g node-inspector
@@ -19,6 +18,3 @@ npm install -g plato
 npm install -g spoof
 npm install -g retire
 npm install -g yo
-
-# install yeoman generators
-npm install -g generator-webapp

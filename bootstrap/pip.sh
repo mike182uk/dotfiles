@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-# powerline
+# Powerline
 pip install psutil
 pip install powerline-status

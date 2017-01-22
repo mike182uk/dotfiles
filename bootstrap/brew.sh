@@ -4,7 +4,7 @@
 brew update
 
 # Upgrade any already-installed formulae
-brew upgrade --all
+brew upgrade
 
 # Add additional taps
 brew tap homebrew/dupes
@@ -40,20 +40,6 @@ brew install brew-cask
 # Install GIT stuff
 brew install git
 brew install diff-so-fancy
-
-# Install PHP Stuff
-brew install homebrew/php/phpbrew
-brew install composer --ignore-dependencies
-brew install box --ignore-dependencies
-
-# Install a DB for when we need to work quick and dirty (locally)
-brew install mariadb
-
-# Install mongo
-brew install mongo
-
-# Install redis
-brew install redis
 
 # Install ruby stuff
 brew install rbenv
@@ -94,6 +80,8 @@ brew install fpp
 # Install misc completions
 brew install vagrant-completion
 brew install docker-completion
+brew install docker-compose-completion
+brew install brew-cask-completion
 
 # Install cask stuff
 brew install caskroom/cask/brew-cask
