@@ -38,5 +38,8 @@
     aa = add .
     m = merge
     patch = --no-pager diff --no-color # bypass custom pager when creating a patch
+    undo = reset HEAD~
+    coa = commit --amend
+    coan = commit --amend --no-edit
 [push]
     default = current
