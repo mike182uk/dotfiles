@@ -41,5 +41,6 @@
     undo = reset HEAD~
     coa = commit --amend
     coan = commit --amend --no-edit
+    pushf = push -f
 [push]
     default = current
