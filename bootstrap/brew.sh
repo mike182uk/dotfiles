@@ -76,6 +76,7 @@ brew install awscli
 brew install makeicns
 brew install svg2png
 brew install fpp
+brew install ctop
 
 # Install misc completions
 brew install vagrant-completion
