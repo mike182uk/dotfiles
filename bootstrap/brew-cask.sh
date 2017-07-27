@@ -14,7 +14,6 @@ brew cask install flux
 brew cask install google-chrome
 brew cask install intellij-idea
 brew cask install iterm2
-brew cask install keepingyouawake
 brew cask install lastfm
 brew cask install licecap
 brew cask install little-snitch
