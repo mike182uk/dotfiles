@@ -77,6 +77,7 @@ brew install makeicns
 brew install svg2png
 brew install fpp
 brew install ctop
+brew install watch
 
 # Install misc completions
 brew install vagrant-completion
