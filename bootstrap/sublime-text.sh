@@ -14,17 +14,9 @@ fi
 
 APP_PATH="/Applications/Sublime Text.app"
 APP_CONTENTS_PATH="$APP_PATH/Contents"
-APP_RESOURCES_PATH="$APP_CONTENTS_PATH/Resources"
 APP_SUPPORT_PATH="$HOME/Library/Application Support/Sublime Text 3"
 PACKAGES_PREFERENCES_PATH="$APP_SUPPORT_PATH/Packages"
 USER_PREFERENCES_PATH="$PACKAGES_PREFERENCES_PATH/User"
-
-#
-# Install icon
-#
-function installIcon() {
-  cp "resources/sublime-text/Sublime Text.icns" "$APP_RESOURCES_PATH/Sublime Text.icns"
-}
 
 #
 # Install subl bin
@@ -56,6 +48,5 @@ function symlinkUserPreferences() {
 }
 
 # Run
-echo "-> Installing icon..." && installIcon
 echo "-> Installing subl bin..." && installSublBin
 echo "-> Symlinking user preferences..." && symlinkUserPreferences
