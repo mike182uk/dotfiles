@@ -78,6 +78,7 @@ brew install svg2png
 brew install fpp
 brew install ctop
 brew install watch
+brew install minio/stable/mc
 
 # Install misc completions
 brew install vagrant-completion
