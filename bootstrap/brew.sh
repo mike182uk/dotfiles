@@ -79,6 +79,7 @@ brew install fpp
 brew install ctop
 brew install watch
 brew install minio/stable/mc
+brew install kubectx
 
 # Install misc completions
 brew install vagrant-completion
