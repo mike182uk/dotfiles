@@ -3,13 +3,13 @@
 SYNC_DIRECTORY=$1
 
 if [ -z "$SYNC_DIRECTORY" ]; then
-  echo "Please specify the path to the sync directory"
-  exit
+	echo "Please specify the path to the sync directory"
+	exit
 fi
 
 if [ ! -d "$SYNC_DIRECTORY" ]; then
-  echo "$SYNC_DIRECTORY is not a valid sync directory"
-  exit
+	echo "$SYNC_DIRECTORY is not a valid sync directory"
+	exit
 fi
 
 APP_PATH="/Applications/Sublime Text.app"
@@ -22,29 +22,29 @@ USER_PREFERENCES_PATH="$PACKAGES_PREFERENCES_PATH/User"
 # Install subl bin
 #
 function installSublBin() {
-  if [ ! -f /usr/local/bin/subl ]; then
-    ln -s "$APP_CONTENTS_PATH/SharedSupport/bin/subl" /usr/local/bin/subl
-  else
-    echo "  -> subl bin already installed"
-  fi
+	if [ ! -f /usr/local/bin/subl ]; then
+		ln -s "$APP_CONTENTS_PATH/SharedSupport/bin/subl" /usr/local/bin/subl
+	else
+		echo "  -> subl bin already installed"
+	fi
 }
 
 #
 # Symlink user preferences
 #
 function symlinkUserPreferences() {
-  if [ -L "$USER_PREFERENCES_PATH" ]; then
-    echo "  -> removing existing symlink"
-    rm "$USER_PREFERENCES_PATH"
-  fi
+	if [ -L "$USER_PREFERENCES_PATH" ]; then
+		echo "  -> removing existing symlink"
+		rm "$USER_PREFERENCES_PATH"
+	fi
 
-  if [ -d "$USER_PREFERENCES_PATH" ]; then
-    BACKUP_LOCATION="$PACKAGES_PREFERENCES_PATH/User-Backup$(date +%s)"
-    echo "  -> backing up existing preferences to $BACKUP_LOCATION"
-    mv "$USER_PREFERENCES_PATH" "$BACKUP_LOCATION"
-  fi
+	if [ -d "$USER_PREFERENCES_PATH" ]; then
+		BACKUP_LOCATION="$PACKAGES_PREFERENCES_PATH/User-Backup$(date +%s)"
+		echo "  -> backing up existing preferences to $BACKUP_LOCATION"
+		mv "$USER_PREFERENCES_PATH" "$BACKUP_LOCATION"
+	fi
 
-  ln -s "$SYNC_DIRECTORY" "$USER_PREFERENCES_PATH"
+	ln -s "$SYNC_DIRECTORY" "$USER_PREFERENCES_PATH"
 }
 
 # Run

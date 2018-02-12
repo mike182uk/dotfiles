@@ -21,8 +21,8 @@ brew install bash
 brew install bash-completion
 
 # Install misc binaries
-brew install coreutils # Install GNU core utilities (those that come with OS X are outdated)
-brew install findutils # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install coreutils         # Install GNU core utilities (those that come with OS X are outdated)
+brew install findutils         # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install wget --enable-iri # Install wget with IRI support
 brew install ack
 brew install homebrew/dupes/grep

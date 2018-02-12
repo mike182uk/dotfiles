@@ -4,7 +4,11 @@
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+	sudo -n true
+	sleep 60
+	kill -0 "$$" || exit
+done 2>/dev/null &
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -62,7 +66,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+sudo systemsetup -setcomputersleep Off >/dev/null
 
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
@@ -130,7 +134,7 @@ defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the timezone; see `systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Europe/London" > /dev/null
+sudo systemsetup -settimezone "Europe/London" >/dev/null
 
 ###############################################################################
 # Screen                                                                      #
@@ -224,9 +228,9 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 # Expand the following File Info panes:
 # “General”, “Open with”, and “Sharing & Permissions”
 defaults write com.apple.finder FXInfoPanesExpanded -dict \
-  General -bool true \
-  OpenWith -bool true \
-  Privileges -bool true
+	General -bool true \
+	OpenWith -bool true \
+	Privileges -bool true
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
@@ -299,7 +303,6 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Privacy: don’t send search queries to Apple
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
 defaults write com.apple.Safari SuppressSearchSuggestions -bool true
-
 
 # Press Tab to highlight each item on a web page
 defaults write com.apple.Safari WebKitTabToLinksPreferenceKey -bool true
@@ -400,7 +403,7 @@ defaults write com.apple.menuextra.clock "DateFormat" "EEE d MMM  HH:mm"
 ###############################################################################
 
 for app in "Activity Monitor" "Finder" "Dock" "SystemUIServer" "Safari"; do
-    killall "${app}" > /dev/null 2>&1
+	killall "${app}" >/dev/null 2>&1
 done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
