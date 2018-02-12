@@ -27,6 +27,7 @@ brew cask install sonos
 brew cask install sourcetree
 brew cask install spectacle
 brew cask install spotify
+brew cask install spotify-notifications
 brew cask install sublime-text
 brew cask install tunnelbear
 brew cask install transmission
