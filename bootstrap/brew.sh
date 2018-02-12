@@ -80,6 +80,7 @@ brew install ctop
 brew install watch
 brew install minio/stable/mc
 brew install kubectx
+brew install shfmt
 
 # Install misc completions
 brew install vagrant-completion
