@@ -32,6 +32,7 @@ brew cask install tunnelbear
 brew cask install transmission
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install visual-studio-code
 brew cask install vmware-fusion
 brew cask install vlc
 
