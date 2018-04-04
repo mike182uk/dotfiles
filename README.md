@@ -42,15 +42,15 @@ In the bootstrap directory there are a couple of scripts to bootstrap the system
 
 - `apm.sh` - Installs atom packages
 - `atom.sh` - Sets up atom
-- `brew-cask.sh` - Installs mac os x apps via brew cask
+- `brew-cask.sh` - Installs macOS apps via brew cask
 - `brew.sh` - Installs and updates homebrew formulae
 - `fonts.sh` - Installs fonts
 - `gems.sh` - Installs and updates ruby gems
 - `go.sh` - Installs useful Go packages
-- `mas.sh` - Installs mac os x apps via mac app store
+- `mas.sh` - Installs macOS apps via mac app store
 - `npm.sh` - Installs and updates node packages
 - `nvm.sh` - Installs node via nvm
-- `osx.sh` - Sets sensible OS X defaults
+- `macos.sh` - Sets sensible macOS defaults
 - `phpbrew.sh` - Installs PHP via phpbrew
 - `pip.sh` - Installs python packages
 - `rbenv.sh` - Installs Ruby via rbenv
