@@ -5,5 +5,6 @@ lint:
 	@shellcheck $$( \
 		find -E . -type f -maxdepth 2 -regex '.*\.(z)?sh' \
 			-not -path "./zsh/config.zsh" \
+			-not -path "./zsh/completion.zsh" \
 			-not -path "./git/completion.zsh" \
 	)

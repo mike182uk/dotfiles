@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-export LSCOLORS="exfxcxdxbxegedabagacad"
-export CLICOLOR=true
-
 # make vim the default editor
 export EDITOR="vim"
 
