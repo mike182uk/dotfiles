@@ -3,9 +3,10 @@ cask_args appdir: '/Applications'
 tap 'caskroom/fonts'
 tap 'dtan4/dtan4'
 tap 'homebrew/cask'
+tap 'getantibody/tap'
 
+brew 'antibody'
 brew 'awscli'
-brew 'bash-completion'
 brew 'bat'
 brew 'ctop'
 brew 'diff-so-fancy'
@@ -45,6 +46,7 @@ brew 'wifi-password'
 brew 'wget'
 brew 'yarn', args: ['without-node']
 brew 'z'
+brew 'zsh'
 
 # applications
 cask '1password'

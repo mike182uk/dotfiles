@@ -1,0 +1,48 @@
+#!/usr/bin/env zsh
+
+DOTFILES=$HOME/.dotfiles
+
+typeset -U config_files
+config_files=($DOTFILES/*/*.zsh)
+
+# load in path files
+for file in ${(M)config_files:#*/path.zsh}; do
+	source "$file"
+done
+
+# statically load zsh plugins (via antibody)
+ZSH_PLUGINS_FILE="$HOME/.zsh_plugins.sh"
+
+if [ -s "$ZSH_PLUGINS_FILE" ]; then
+	source "$ZSH_PLUGINS_FILE"
+fi
+
+# load everything but path and completion files
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
+	source "$file"
+done
+
+autoload -Uz compinit
+
+typeset -i updated_at=$(date +'%j' -r ~/.zcompdump 2>/dev/null || stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
+if [ $(date +'%j') != $updated_at ]; then
+	compinit -i
+else
+	compinit -C -i
+fi
+
+# load completion files after autocomplete loads
+for file in ${(M)config_files:#*/completion.zsh}; do
+	source "$file"
+done
+
+# load functions
+fpath=($DOTFILES/functions $fpath)
+autoload -U "$DOTFILES"/functions/*(:t)
+
+unset config_files updated_at
+
+# load in local config
+if [ -f "$HOME/.localrc" ]; then
+	source "$HOME/.localrc"
+fi

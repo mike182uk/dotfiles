@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 if test ! "$(command -v brew)" || test ! "$(command -v fzf)"; then
 	return
 fi
 
-FZF_PATH="$(brew --prefix fzf)"
+FZF_PATH=$(brew --prefix fzf)
 
 # shellcheck source=/dev/null
-source "$FZF_PATH/shell/completion.bash"
+. "$FZF_PATH/shell/completion.zsh"

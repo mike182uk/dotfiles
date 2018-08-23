@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 set -e
 
-DOTFILES_ROOT="$HOME/.dotfiles"
+DOTFILES_ROOT=$HOME/.dotfiles
 
 link_file() {
 	if [ -e "$2" ]; then
@@ -24,7 +24,7 @@ link_file() {
 	echo "linked $1 to $2"
 }
 
-find -H "$DOTFILES_ROOT" -maxdepth 3 -name '*.symlink' -not -path '*.git*' |
+find -H "$DOTFILES_ROOT" -maxdepth 3 -name "*.symlink" -not -path "*.git*" |
 	while read -r src; do
 		dst="$HOME/.$(basename "${src%.*}")"
 

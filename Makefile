@@ -1,10 +1,9 @@
 fmt:
-	@find . -maxdepth 2 -name '*.sh' | while read -r src; do shfmt -w -l "$$src"; done
+	@find -E . -type f -maxdepth 2 -regex '.*\.(z)?sh' | while read -r src; do shfmt -w -l "$$src"; done
 
 lint:
-	@shellcheck */*.sh
-
-dev_user=dotfilesdev
-dev:
-	@docker build --build-arg user=$(dev_user) -t dotfiles .
-	@docker run -it --rm -v $(PWD):/home/$(dev_user)/.dotfiles dotfiles /bin/bash
+	@shellcheck $$( \
+		find -E . -type f -maxdepth 2 -regex '.*\.(z)?sh' \
+			-not -path "./zsh/config.zsh" \
+			-not -path "./git/completion.zsh" \
+	)

@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-if [ -n "$PS1" ]; then
-	source "$HOME/.bash_profile"
-fi

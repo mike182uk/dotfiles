@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # use exa instead of ls
-alias ls='exa'
-alias l='exa -lga --git --group-directories-first'
+alias ls="exa"
+alias l="exa -lga --git --group-directories-first"
 
 # use trash to delete stuff
-alias rm='trash'
+alias rm="trash"
 
 # colorize grep output
 alias grep="grep --color=auto"

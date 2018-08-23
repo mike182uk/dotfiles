@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # `o` with no arguments opens current directory, otherwise opens the given
 # location

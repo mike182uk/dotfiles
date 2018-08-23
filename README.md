@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - Git
-- Bash
+- Ruby (to install `homebrew`)
 
 ## Installation
 
@@ -33,7 +33,7 @@ script/setup_symlinks.sh
 
 ## Local config
 
-You should store your local config in `~/.bash_local`. This file will be sourced automatically by `~/.bash_profile`.
+You should store your local config in `~/.localrc`. This file will be sourced automatically by `~/.zshrc`.
 
 I use this file to set my global git config options:
 
