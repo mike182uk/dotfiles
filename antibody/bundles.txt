@@ -1,0 +1,7 @@
+mafredri/zsh-async
+rupa/z
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+
+sindresorhus/pure
+zsh-users/zsh-syntax-highlighting

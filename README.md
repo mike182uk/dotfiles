@@ -1,105 +1,48 @@
 # Dotfiles
 
+## Prerequisites
+
+- Git
+- Ruby (to install `homebrew`)
+
 ## Installation
 
-Clone this repository to a suitable location (I use `~/Project/dotfiles`) and `cd` into it.
+1. Clone this repository into a directory called `.dotfiles` inside your `$HOME` directory and `cd` into it:
 
 ```bash
-git clone https://github.com/mike182uk/dotfiles.git && cd dotfiles
+git clone https://github.com/mike182uk/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 ```
 
-Run the sync script.
+2. Install Homebrew:
 
 ```bash
-. sync.sh
+script/install_brew.sh
 ```
 
-Any time you want to sync any new changes, navigate to the dotfiles directory and run this script.
+3. Bootstrap the system:
 
-## Local Config / Commands
+```bash
+script/run_installers.sh
+```
 
-You should store your local specific config / commands in `~/.bash_local`. If this file is available, it will be sourced automatically by `~/.bash_profile`.
+4. Setup the symlinks:
+
+```bash
+script/setup_symlinks.sh
+```
+
+## Local config
+
+You should store your local config in `~/.localrc`. This file will be sourced automatically by `~/.zshrc`.
 
 I use this file to set my global git config options:
 
 ```bash
-# Git credentials
-# Not under version control to prevent people from
-# accidentally committing with my details
-GIT_AUTHOR_NAME="Michael Barrett"
-GIT_AUTHOR_EMAIL="mike182uk@gmail.com"
+GIT_AUTHOR_NAME="<name>"
+GIT_AUTHOR_EMAIL="<email>"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
-# Set the credentials (modifies ~/.gitconfig)
 git config --global user.name "$GIT_AUTHOR_NAME"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
-
-## Bootstrap Scripts
-
-In the bootstrap directory there are a couple of scripts to bootstrap the system (install packages / configure system etc).
-
-- `apm.sh` - Installs atom packages
-- `atom.sh` - Sets up atom
-- `brew-cask.sh` - Installs macOS apps via brew cask
-- `brew.sh` - Installs and updates homebrew formulae
-- `fonts.sh` - Installs fonts
-- `gems.sh` - Installs and updates ruby gems
-- `go.sh` - Installs useful Go packages
-- `mas.sh` - Installs macOS apps via mac app store
-- `npm.sh` - Installs and updates node packages
-- `nvm.sh` - Installs node via nvm
-- `macos.sh` - Sets sensible macOS defaults
-- `phpbrew.sh` - Installs PHP via phpbrew
-- `pip.sh` - Installs python packages
-- `rbenv.sh` - Installs Ruby via rbenv
-- `sublime-text.sh` - Sets up sublime text
-- `tmux.sh` - Sets up tmux
-- `vagrant.sh` - Installs useful vagrant plugins
-- `vim.sh` - Installs vim plugins
-
-#### sublime-text.sh
-
-The Sublime Text bootstrap script performs the following tasks:
-
-- Installs `subl` binary to `/usr/local/bin`
-- Installs a nicer dock icon
-- Creates a symlink for the user preferences
-
-Navigate to bootstrap directory and run
-
-```
-./sublime-text.sh <path-to-sync-directory>
-```
-
-The sync directory is a directory where you keep your Sublime Text user preferences (normally found at `/Users/<user>/Library/Application Support/Sublime Text 3/Packages/User`).
-
-I currently store my Sublime Text user preferences in my dropbox, so i would run the command like this:
-
-```
-./sublime-text.sh ~/Dropbox/sublime/preferences
-```
-
-#### atom.sh
-
-The Atom bootstrap script performs the following tasks:
-
-- Creates a symlink for the user preferences
-
-Navigate to bootstrap directory and run
-
-```
-./atom.sh <path-to-sync-directory>
-```
-
-The sync directory is a directory where you keep your Atom user preferences (normally found at `~/.atom`).
-
-I currently store my Atom user preferences in my dropbox, so i would run the command like this:
-
-```
-./atom.sh ~/Dropbox/atom/preferences
-```
-
-## Binaries
-Any binaries that are not installed globally can be added to the bin directory. This directory is automatically added to `$PATH` in `.paths`.
