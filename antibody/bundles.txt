@@ -1,3 +1,4 @@
+changyuheng/fz
 changyuheng/zsh-interactive-cd
 mafredri/zsh-async
 rupa/z
