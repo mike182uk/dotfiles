@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-alias reload='exec "$SHELL" -l'
+alias reload='clear; exec "$SHELL" -l'
 alias r=reload
