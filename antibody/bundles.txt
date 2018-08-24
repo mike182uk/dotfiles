@@ -1,3 +1,4 @@
+changyuheng/zsh-interactive-cd
 mafredri/zsh-async
 rupa/z
 zsh-users/zsh-autosuggestions
