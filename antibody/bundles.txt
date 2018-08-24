@@ -6,4 +6,4 @@ zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 
 sindresorhus/pure
-zsh-users/zsh-syntax-highlighting
+zdharma/fast-syntax-highlighting
