@@ -56,3 +56,6 @@ if test "$(command -v brew)"; then
 		bindkey "^R" history-incremental-search-backward
 	fi
 fi
+
+# dont highlight text on paste
+zle_highlight+=(paste:none)
