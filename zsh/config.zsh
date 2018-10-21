@@ -15,9 +15,6 @@ setopt LOCAL_OPTIONS
 # allow functions to have local traps
 setopt LOCAL_TRAPS
 
-# share history between sessions ???
-setopt SHARE_HISTORY
-
 # add timestamps to history
 setopt EXTENDED_HISTORY
 setopt PROMPT_SUBST
@@ -27,9 +24,8 @@ setopt COMPLETE_IN_WORD
 # adds history
 setopt APPEND_HISTORY
 
-# adds history incrementally and share it across sessions
+# adds history incrementally
 setopt INC_APPEND_HISTORY
-setopt SHARE_HISTORY
 
 # dont record dupes in history
 setopt HIST_IGNORE_ALL_DUPS
