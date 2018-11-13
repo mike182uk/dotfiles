@@ -15,10 +15,10 @@ setopt LOCAL_OPTIONS
 # allow functions to have local traps
 setopt LOCAL_TRAPS
 
-# add timestamps to history
-setopt EXTENDED_HISTORY
+# enable command substitution in the prompt (and parameter expansion and arithmetic expansion)
 setopt PROMPT_SUBST
-setopt CORRECT
+
+# allow completion from within a word/phrase
 setopt COMPLETE_IN_WORD
 
 # adds history
@@ -34,6 +34,9 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_VERIFY
 setopt HIST_EXPIRE_DUPS_FIRST
+
+# add timestamps to history
+setopt EXTENDED_HISTORY
 
 # dont ask for confirmation in rm globs*
 setopt RM_STAR_SILENT
