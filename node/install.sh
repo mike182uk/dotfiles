@@ -6,7 +6,7 @@ set -e
 CURRENT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)
 
 # shellcheck source=/dev/null
-. "$CURRENT_DIR/env.sh"
+. "$CURRENT_DIR/env.zsh"
 
 # ensure nvm is installed
 if [ ! -s "$NVM_DIR/nvm.sh" ]; then
