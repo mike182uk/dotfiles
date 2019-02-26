@@ -12,7 +12,11 @@ osascript -e 'tell application "System Preferences" to quit'
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+	sudo -n true
+	sleep 60
+	kill -0 "$$" || exit
+done 2>/dev/null &
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -105,11 +109,11 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 sudo pmset -a hibernatemode 0
 
 # Remove the sleep image file to save disk space
-# sudo rm /Private/var/vm/sleepimage
+sudo rm /Private/var/vm/sleepimage
 # Create a zero-byte file instead…
-# sudo touch /Private/var/vm/sleepimage
+sudo touch /Private/var/vm/sleepimage
 # …and make sure it can’t be rewritten
-# sudo chflags uchg /Private/var/vm/sleepimage
+sudo chflags uchg /Private/var/vm/sleepimage
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -122,7 +126,7 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Trackpad: map bottom right corner to right-click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool false
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
@@ -572,7 +576,7 @@ for app in "Activity Monitor" \
 	"SystemUIServer" \
 	"Terminal" \
 	"Transmission"; do
-	killall "${app}" &> /dev/null
+	killall "${app}" &>/dev/null
 done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
