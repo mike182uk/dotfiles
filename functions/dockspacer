@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+# create a spacer in the dock
+function dockspacer() {
+  defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+
+  killall Dock
+}
