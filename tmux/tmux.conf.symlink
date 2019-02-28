@@ -48,6 +48,10 @@ set -g clock-mode-colour blue
 # enable x-term keys
 set-window-option -g xterm-keys on
 
+# set the client terminal title
+set-option -g set-titles on
+set-option -g set-titles-string "#S/#I - #W"
+
 # open new windows in the current directory
 bind c new-window -c "#{pane_current_path}"
 
