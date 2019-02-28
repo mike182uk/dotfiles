@@ -55,7 +55,6 @@ brew 'z'
 brew 'zsh'
 
 # applications
-cask '1password'
 cask 'alfred'
 cask 'authy'
 cask 'balenaetcher'
@@ -106,9 +105,11 @@ cask 'webtorrent'
 cask 'whatsapp'
 
 # mas applications
+mas '1Password 7', id: 1333542190
 mas 'Lungo', id: 1263070803
 mas 'Todoist', id: 585829637
 mas 'Tweetbot', id: 557168941
+mas 'Xcode', id: 497799835
 
 # fonts
 cask 'font-source-code-pro'
