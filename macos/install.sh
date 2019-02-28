@@ -98,6 +98,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -bool true
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
