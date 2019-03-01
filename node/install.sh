@@ -26,3 +26,8 @@ if test "$(command -v nvm)"; then
 
 	echo "you may need to reload your shell if you can not access node or npm"
 fi
+
+# ensure empty node history file has been created
+if [ ! -f "$NODE_REPL_HISTORY_FILE" ]; then
+	touch "$NODE_REPL_HISTORY_FILE"
+fi
