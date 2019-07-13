@@ -58,7 +58,6 @@ brew 'zsh'
 
 # applications
 cask 'alfred'
-cask 'authy'
 cask 'balenaetcher'
 cask 'bartender'
 cask 'brave-browser'
