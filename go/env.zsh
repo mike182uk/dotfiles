@@ -1,3 +1,8 @@
 #!/usr/bin/env sh
 
-export GOPATH=$HOME/Projects/Go
+export GIMME_SILENT_ENV=1
+
+# initialise gimme
+if test "$(command -v gimme)"; then
+	eval "$(gimme stable)"
+fi
