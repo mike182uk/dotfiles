@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 TPM_DIR=$HOME/.tmux/plugins/tpm
 
