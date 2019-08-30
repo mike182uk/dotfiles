@@ -6,3 +6,5 @@ export GIMME_SILENT_ENV=1
 if test "$(command -v gimme)"; then
 	eval "$(gimme stable)"
 fi
+
+export GOPATH=$HOME/Go
