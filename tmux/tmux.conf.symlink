@@ -20,9 +20,6 @@ set -g status-interval 5
 # enable mouse mode
 set-option -g mouse on
 
-# use reattach-to-user-namespace wrapper to stop weird terminal stuff happening
-set -g default-command "reattach-to-user-namespace -l $SHELL"
-
 # theme
 set -g status-bg black
 set -g status-fg white
