@@ -10,10 +10,8 @@ alias -- -="cd -"
 
 # location shortcuts
 alias dl="cd ~/Downloads"
-alias db="cd ~/Dropbox"
 alias d="cd ~/Documents"
 alias p="cd ~/Projects"
-alias gp="cd ~/Projects/Go"
 alias h="cd ~"
 alias .f="cd ~/.dotfiles"
 
@@ -31,10 +29,6 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 
 # url encode a string
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
-# update installed software
-alias update='echo "Updating..."'
-alias u="update"
 
 # snpt
 alias cs="snpt ls | fzf | snpt cp"
