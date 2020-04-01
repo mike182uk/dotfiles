@@ -108,3 +108,4 @@ mas 'Xcode', id: 497799835
 
 # fonts
 cask 'font-source-code-pro'
+cask 'font-jetbrains-mono'
