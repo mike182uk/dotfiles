@@ -2,11 +2,8 @@
 
 set -e
 
-# https://stackoverflow.com/a/246128/1004917
-CURRENT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)
-
 # shellcheck source=/dev/null
-. "$CURRENT_DIR/env.zsh"
+. "$(dirname "$0")/env.zsh"
 
 # ensure nvm is installed
 if [ ! -s "$NVM_DIR/nvm.sh" ]; then
