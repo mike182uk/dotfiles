@@ -1,5 +1,5 @@
 fmt:
-	@fd -d 2 -e .sh -e .zsh | while read -r src; do shfmt -w -l "$$src"; done
+	@fd -d 2 -e .sh -e .zsh -x shfmt -w -l "{}"
 
 lint:
 	@shellcheck $$( fd -d 2 -e .sh -e .zsh \
