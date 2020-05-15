@@ -7,3 +7,9 @@ lint:
 			-E "zsh/completion.zsh" \
 			-E "git/completion.zsh" \
 	)
+
+update_antibody:
+	@antibody update
+
+update_tmux:
+	@$$HOME/.tmux/plugins/tpm/bin/update_plugins all
