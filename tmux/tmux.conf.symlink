@@ -53,8 +53,8 @@ set-option -g set-titles-string "#S/#I - #W"
 bind c new-window -c "#{pane_current_path}"
 
 # split window
-bind % split-window -h -c "#{pane_current_path}"
-bind '"' split-window -c "#{pane_current_path}"
+bind "|" split-window -h -c "#{pane_current_path}"
+bind "_" split-window -c "#{pane_current_path}"
 
 # move window left / right
 bind S-Left swap-window -t -1
