@@ -7,4 +7,4 @@ if test "$(command -v gimme)"; then
 	eval "$(gimme stable)"
 fi
 
-export GOPATH=$HOME/Go
+export GOPATH=$HOME/Go/workspaces/default
