@@ -1,0 +1,14 @@
+{
+  "groups": {
+    "desktop": {
+      "title": "Desktop",
+      "input": "HD Pro Webcam C920",
+      "output": "Scarlett 2i2 USB"
+    },
+    "video_call": {
+      "title": "Video Call",
+      "input": "HD Pro Webcam C920",
+      "output": "Michael’s AirPods Pro"
+    }
+  }
+}
