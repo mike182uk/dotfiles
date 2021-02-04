@@ -17,6 +17,9 @@ if [ -s "$ZSH_PLUGINS_FILE" ]; then
 	source "$ZSH_PLUGINS_FILE"
 fi
 
+# load non-antigen plugins
+fpath+=$HOME/.zsh/pure
+
 # load everything but path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
 	source "$file"
