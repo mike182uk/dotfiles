@@ -13,3 +13,4 @@ touch "$LOCAL_RC_PATH"
 
 # install plugins
 git clone https://github.com/sindresorhus/pure.git "$PLUGINS_PATH/pure"
+git clone https://github.com/bigH/git-fuzzy.git "$PLUGINS_PATH/git-fuzzy"
