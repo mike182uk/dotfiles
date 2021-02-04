@@ -38,6 +38,8 @@
     coa = commit --amend
     coan = commit --amend --no-edit
     pushf = push -f
+[pull]
+    rebase = true
 [push]
     default = current
 [url "ssh://git@github.com/"]
