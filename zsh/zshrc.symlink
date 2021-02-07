@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+# zmodload zsh/zprof
+
 DOTFILES=$HOME/.dotfiles
 
 typeset -U config_files
@@ -49,3 +51,5 @@ unset config_files updated_at
 if [ -f "$HOME/.localrc" ]; then
 	source "$HOME/.localrc"
 fi
+
+# zprof
