@@ -1,116 +1,198 @@
-cask_args appdir: '/Applications'
-
-tap 'dtan4/dtan4'
-tap 'getantibody/tap'
-tap 'homebrew/bundle'
-tap 'homebrew/cask'
-tap 'homebrew/cask-drivers'
-tap 'homebrew/cask-versions'
-tap 'homebrew/core'
-tap 'jesseduffield/lazydocker'
-tap 'minio/stable'
-tap 'mike182uk/tap'
-
-brew 'antibody'
-brew 'awscli'
-brew 'bzip2'
-brew 'bat'
-brew 'composer'
-brew 'ctop'
-brew 'diff-so-fancy'
-brew 'exa'
-brew 'fd'
-brew 'ffmpeg'
-brew 'fpp'
-brew 'fzf'
-brew 'httpie'
-brew 'gimme'
-brew 'git'
-brew 'jid'
-brew 'jq'
-brew 'k8sec'
-brew 'kubectx'
-brew 'kubernetes-cli'
-brew 'lazydocker'
-brew 'libiconv'
-brew 'libzip'
-brew 'makeicns'
-brew 'mas'
-brew 'minio/stable/mc'
-brew 'packer'
-brew 'rbenv'
-brew 'rbenv-bundler'
-brew 'rclone'
-brew 'reattach-to-user-namespace'
-brew 'ripgrep'
-brew 'ruby-build'
-brew 'shellcheck'
-brew 'shfmt'
-brew 'snpt'
-brew 'ssh-copy-id'
-brew 'stern'
-brew 'svg2png'
-brew 'switchaudio-osx'
-brew 'tidy-html5'
-brew 'tldr'
-brew 'tmux'
-brew 'trash'
-brew 'tree'
-brew 'vim'
-brew 'watch'
-brew 'wifi-password'
-brew 'wget'
-brew 'yarn', args: ['ignore-dependencies']
-brew 'z'
-brew 'zlib'
-brew 'zsh'
-
-# applications
-cask 'alfred'
-cask 'balenaetcher'
-cask 'bartender'
-cask 'bloomrpc'
-cask 'brave-browser'
-cask 'dash3'
-cask 'docker'
-cask 'firefox'
-cask 'gifox'
-cask 'google-backup-and-sync'
-cask 'google-chrome'
-cask 'google-chrome-canary'
-cask 'intellij-idea'
-cask 'iterm2'
-cask 'mysqlworkbench'
-cask 'notion'
-cask 'ngrok'
-cask 'paw'
-cask 'qlcolorcode'
-cask 'qlimagesize'
-cask 'qlmarkdown'
-cask 'qlstephen'
-cask 'qlvideo'
-cask 'quicklook-json'
-cask 'sonos'
-cask 'spectacle'
-cask 'spotify'
-cask 'sublime-text'
-cask 'suspicious-package'
-cask 'tableplus'
-cask 'transmission'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'visual-studio-code'
-cask 'vlc'
-cask 'webtorrent'
-cask 'whatsapp'
-
-# mas applications
-mas '1Password 7', id: 1333542190
-mas 'Lungo', id: 1263070803
-mas 'Todoist', id: 585829637
-mas 'Tweetbot', id: 557168941
-mas 'Xcode', id: 497799835
-
-# fonts
-cask 'font-source-code-pro'
-cask 'font-jetbrains-mono'
+tap "dtan4/dtan4"
+tap "getantibody/tap"
+tap "golangci/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "mike182uk/tap", "git@github.com:mike182uk/homebrew-tap.git"
+tap "minio/stable"
+tap "teamookla/speedtest"
+# Shell plugin manager
+brew "antibody"
+# Command-line tool for interacting with the balenaCloud and balena API
+brew "balena-cli"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Freely available high-quality data compressor
+brew "bzip2"
+# Dependency Manager for PHP
+brew "composer"
+# Top-like interface for container metrics
+brew "ctop"
+# Secure runtime for JavaScript and TypeScript
+brew "deno"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+# Create Docker hosts locally and on cloud providers
+brew "docker-machine"
+# Modern replacement for 'ls'
+brew "exa"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# CLI program that accepts piped input and presents files for selection
+brew "fpp"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Shell script to install any Go version
+brew "gimme"
+# Distributed revision control system
+brew "git"
+# Kubernetes package manager
+brew "helm"
+# Regular expressions library
+brew "oniguruma"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Asynchronous event library
+brew "libevent"
+# Conversion library
+brew "libiconv"
+# C library for reading, creating, and modifying zip archives
+brew "libzip"
+# Mac App Store command-line interface
+brew "mas"
+# Tool for creating identical machine images for multiple platforms
+brew "packer"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Install various Ruby versions and implementations
+brew "ruby-build"
+# Ruby version manager
+brew "rbenv"
+# Makes shims aware of bundle install paths
+brew "rbenv-bundler"
+# Rsync for cloud storage
+brew "rclone"
+# Reattach process (e.g., tmux) to background
+brew "reattach-to-user-namespace"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Autoformat shell script source code
+brew "shfmt"
+# Add a public key to a remote machine's authorized_keys file
+brew "ssh-copy-id", link: true
+# Tail multiple Kubernetes pods & their containers
+brew "stern"
+# SVG to PNG converter
+brew "svg2png"
+# Change macOS audio source from the command-line
+brew "switchaudio-osx"
+# Granddaddy of HTML tools, with support for modern standards
+brew "tidy-html5"
+# Terminal multiplexer
+brew "tmux"
+# CLI tool that moves files or folder to the trash
+brew "trash"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Internet file retriever
+brew "wget"
+# Homebrew, but with Docker images
+brew "whalebrew"
+# Show the current WiFi network password
+brew "wifi-password"
+# Tracks most-used directories to make cd smarter
+brew "z"
+# General-purpose lossless data-compression library
+brew "zlib"
+# UNIX shell (command interpreter)
+brew "zsh"
+# CLI tool to manage Kubernetes Secrets easily
+brew "dtan4/dtan4/k8sec"
+# Gist powered CLI snippet retriever
+brew "mike182uk/tap/snpt@3.0.0"
+# MinIO Client for object storage and filesystems
+brew "minio/stable/mc"
+# Ookla Speedtest
+brew "teamookla/speedtest/speedtest"
+# Application launcher and productivity software
+cask "alfred"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Menu bar icon organizer
+cask "bartender"
+# GUI Client for GRPC Services
+cask "bloomrpc"
+# Web browser focusing on privacy
+cask "brave-browser"
+cask "dash3"
+# App to build and share containerized applications and microservices
+cask "docker"
+# Web browser
+cask "firefox"
+cask "font-jetbrains-mono"
+cask "font-source-code-pro"
+# App to record the screen
+cask "gifox"
+cask "google-backup-and-sync"
+# Web browser
+cask "google-chrome"
+cask "intellij-idea"
+# System monitoring app
+cask "istat-menus"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Visual tool to design, develop and administer MySQL servers
+cask "mysqlworkbench"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# App to write, plan, collaborate, and get organized
+cask "notion"
+# HTTP client that helps testing and describing APIs
+cask "paw"
+# QuickLook plug-in that renders source code with syntax highlighting
+cask "qlcolorcode"
+# Display image info and preview unsupported formats in QuickLook
+cask "qlimagesize"
+# QuickLook generator for Markdown files
+cask "qlmarkdown"
+cask "qlvideo"
+cask "quicklook-json"
+cask "sonos"
+# Move and resize windows with ease
+cask "spectacle"
+# Music streaming service
+cask "spotify"
+# Text editor for code, markup and prose
+cask "sublime-text"
+# Application for inspecting installer packages
+cask "suspicious-package"
+# Native GUI tool for relational databases
+cask "tableplus"
+# Open-source BitTorrent client
+cask "transmission"
+# VPN client for secure internet access and private browsing
+cask "tunnelbear"
+# Development environment
+cask "vagrant"
+# Free and open-source hosted hypervisor for x86 virtualization
+cask "virtualbox"
+# AMD64/Intel64 and x86 virtualization
+cask "virtualbox-extension-pack"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+# Desktop client for WhatsApp
+cask "whatsapp"
+mas "1Password 7", id: 1333542190
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Lungo", id: 1263070803
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Todoist", id: 585829637
+mas "Tweetbot", id: 557168941
+mas "Xcode", id: 497799835
+whalebrew "whalebrew/ffmpeg"
