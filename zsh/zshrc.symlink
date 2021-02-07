@@ -28,13 +28,10 @@ for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
 done
 
 autoload -Uz compinit
-
-typeset -i updated_at=$(date +'%j' -r ~/.zcompdump 2>/dev/null || stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
-if [ $(date +'%j') != $updated_at ]; then
-	compinit -i
-else
-	compinit -C -i
-fi
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
 
 # load completion files after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}; do
@@ -45,7 +42,7 @@ done
 fpath=($DOTFILES/functions $fpath)
 autoload -U "$DOTFILES"/functions/*(:t)
 
-unset config_files updated_at
+unset config_files
 
 # load in local config
 if [ -f "$HOME/.localrc" ]; then
