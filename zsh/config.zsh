@@ -41,10 +41,6 @@ setopt EXTENDED_HISTORY
 # dont ask for confirmation in rm globs*
 setopt RM_STAR_SILENT
 
-# backward and forward word with option+left/right
-bindkey "\e[1;2C" forward-word
-bindkey "\e[1;2D" backward-word
-
 # search history with fzf if installed, default otherwise
 if test "$(command -v brew)"; then
 	FZF_PATH=/usr/local/opt/fzf
