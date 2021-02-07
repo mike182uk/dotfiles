@@ -158,9 +158,9 @@ cask "qlimagesize"
 cask "qlmarkdown"
 cask "qlvideo"
 cask "quicklook-json"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
 cask "sonos"
-# Move and resize windows with ease
-cask "spectacle"
 # Music streaming service
 cask "spotify"
 # Text editor for code, markup and prose
