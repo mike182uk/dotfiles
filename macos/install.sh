@@ -13,9 +13,9 @@ sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until the script has finished
 while true; do
-	sudo -n true
-	sleep 60
-	kill -0 "$$" || exit
+  sudo -n true
+  sleep 60
+  kill -0 "$$" || exit
 done 2>/dev/null &
 
 ###############################################################################
@@ -275,9 +275,9 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Expand the following File Info panes:
 # “General”, “Open with”, and “Sharing & Permissions”
 defaults write com.apple.finder FXInfoPanesExpanded -dict \
-	General -bool true \
-	OpenWith -bool true \
-	Privileges -bool true
+  General -bool true \
+  OpenWith -bool true \
+  Privileges -bool true
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
@@ -553,16 +553,16 @@ defaults write org.m0k.transmission RandomPort -bool true
 ###############################################################################
 
 for app in "Activity Monitor" \
-	"Dock" \
-	"Finder" \
-	"Google Chrome Canary" \
-	"Google Chrome" \
-	"Photos" \
-	"Safari" \
-	"SystemUIServer" \
-	"Terminal" \
-	"Transmission"; do
-	killall "${app}" &>/dev/null
+  "Dock" \
+  "Finder" \
+  "Google Chrome Canary" \
+  "Google Chrome" \
+  "Photos" \
+  "Safari" \
+  "SystemUIServer" \
+  "Terminal" \
+  "Transmission"; do
+  killall "${app}" &>/dev/null
 done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."

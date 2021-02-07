@@ -10,15 +10,15 @@ DOTFILES_ROOT=$HOME/.dotfiles
 HOMEBREW_INSTALLER=$DOTFILES_ROOT/homebrew/install.sh
 
 if [ -s "$HOMEBREW_INSTALLER" ]; then
-	# shellcheck source=/dev/null
-	. "$HOMEBREW_INSTALLER"
+  # shellcheck source=/dev/null
+  . "$HOMEBREW_INSTALLER"
 fi
 
 # run all installers except for the homebrew installer
 find -H "$DOTFILES_ROOT" -maxdepth 2 -name "install.sh" -not -path "*.git*" -not -path "*homebrew*" |
-	while read -r installer; do
-		echo "running installer: $installer"
+  while read -r installer; do
+    echo "running installer: $installer"
 
-		# shellcheck source=/dev/null
-		. "$installer"
-	done
+    # shellcheck source=/dev/null
+    . "$installer"
+  done

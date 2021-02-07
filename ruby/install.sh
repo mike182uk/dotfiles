@@ -3,7 +3,7 @@
 set -e
 
 if test ! "$(command -v rbenv)"; then
-	exit
+  exit
 fi
 
 LATEST_VERSION=$(ruby-build --definitions | grep "^[0-9].[0-9].[0-9]$" | tail -n 1)

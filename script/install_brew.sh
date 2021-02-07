@@ -3,11 +3,11 @@
 set -e
 
 if test ! "$(command -v brew)"; then
-	echo "installing brew..."
+  echo "installing brew..."
 
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-	echo "brew installed!"
+  echo "brew installed!"
 else
-	echo "brew already installed!"
+  echo "brew already installed!"
 fi

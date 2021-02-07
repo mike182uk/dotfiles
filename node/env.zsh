@@ -11,8 +11,8 @@ export NVM_DIR=$HOME/.nvm
 
 # lazy load nvm
 nvm() {
-	# shellcheck source=/dev/null
-	. "$NVM_DIR/nvm.sh"
+  # shellcheck source=/dev/null
+  . "$NVM_DIR/nvm.sh"
 
-	nvm "$@"
+  nvm "$@"
 }

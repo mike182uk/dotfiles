@@ -43,13 +43,13 @@ setopt RM_STAR_SILENT
 
 # search history with fzf if installed, default otherwise
 if test "$(command -v brew)"; then
-	FZF_PATH=/usr/local/opt/fzf
+  FZF_PATH=/usr/local/opt/fzf
 
-	if test -d "$FZF_PATH/shell"; then
-		source "$FZF_PATH/shell/key-bindings.zsh"
-	else
-		bindkey "^R" history-incremental-search-backward
-	fi
+  if test -d "$FZF_PATH/shell"; then
+    source "$FZF_PATH/shell/key-bindings.zsh"
+  else
+    bindkey "^R" history-incremental-search-backward
+  fi
 fi
 
 # dont highlight text on paste

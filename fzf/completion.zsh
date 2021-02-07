@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-if test ! "$(command -v brew)" || test ! "$(command -v fzf)"; then
-	return
+if test ! "$(command -v fzf)"; then
+  return
 fi
 
 # shellcheck source=/dev/null

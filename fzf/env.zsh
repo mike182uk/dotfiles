@@ -10,14 +10,14 @@ export FZF_DEFAULT_OPTS="
 "
 
 if test "$(command -v fd)"; then
-	# use fd (https://github.com/sharkdp/fd) instead of the default find
-	# command for listing path candidates
-	_fzf_compgen_path() {
-		fd --hidden --follow --exclude ".git" . "$1"
-	}
+  # use fd (https://github.com/sharkdp/fd) instead of the default find
+  # command for listing path candidates
+  _fzf_compgen_path() {
+    fd --hidden --follow --exclude ".git" . "$1"
+  }
 
-	# use fd to generate the list for directory completion
-	_fzf_compgen_dir() {
-		fd --type d --hidden --follow --exclude ".git" . "$1"
-	}
+  # use fd to generate the list for directory completion
+  _fzf_compgen_dir() {
+    fd --type d --hidden --follow --exclude ".git" . "$1"
+  }
 fi

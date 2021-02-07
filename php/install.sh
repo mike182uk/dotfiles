@@ -3,7 +3,7 @@
 set -e
 
 if test ! "$(command -v phpenv)"; then
-	exit
+  exit
 fi
 
 # install phpenv

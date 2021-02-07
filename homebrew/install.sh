@@ -8,5 +8,5 @@ CURRENT_DIR=$(dirname "$0")
 . "$CURRENT_DIR/env.zsh"
 
 if test "$(command -v brew)"; then
-	brew bundle --file="$CURRENT_DIR/Brewfile"
+  brew bundle --file="$CURRENT_DIR/Brewfile"
 fi
