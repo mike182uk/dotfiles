@@ -47,7 +47,7 @@ bindkey "\e[1;2D" backward-word
 
 # search history with fzf if installed, default otherwise
 if test "$(command -v brew)"; then
-	FZF_PATH=$(brew --prefix fzf)
+	FZF_PATH=/usr/local/opt/fzf
 
 	if test -d "$FZF_PATH/shell"; then
 		source "$FZF_PATH/shell/key-bindings.zsh"

@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# benchmark shell load time
+function benchshell() {
+  for i in $(seq 1 10); do /usr/bin/time ${1-$SHELL} -i -c exit; done
+}

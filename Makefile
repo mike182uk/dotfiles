@@ -6,6 +6,7 @@ lint:
 			-E "zsh/config.zsh" \
 			-E "zsh/completion.zsh" \
 			-E "git/completion.zsh" \
+			-E "zsh/prompt.zsh" \
 	)
 
 update_antibody:

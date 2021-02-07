@@ -20,7 +20,12 @@ if [ -s "$ZSH_PLUGINS_FILE" ]; then
 fi
 
 # load non-antigen plugins
+
+# pure
 fpath+=$HOME/.zsh/pure
+
+# evalcache
+source $HOME/.zsh/evalcache/evalcache.plugin.zsh
 
 # load everything but path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do

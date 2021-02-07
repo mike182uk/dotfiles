@@ -9,9 +9,10 @@ export NODE_REPL_HISTORY_SIZE=32768
 # nvm dir
 export NVM_DIR=$HOME/.nvm
 
-# initialise nvm
-
-# shellcheck source=/dev/null
-if [ -s "$NVM_DIR/nvm.sh" ]; then
+# lazy load nvm
+nvm() {
+	# shellcheck source=/dev/null
 	. "$NVM_DIR/nvm.sh"
-fi
+
+	nvm "$@"
+}
