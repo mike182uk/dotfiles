@@ -31,6 +31,8 @@ brew "docker-machine"
 brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Fast and simple Node.js version manager
+brew "fnm"
 # CLI program that accepts piped input and presents files for selection
 brew "fpp"
 # Command-line fuzzy finder written in Go
