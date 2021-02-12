@@ -37,6 +37,8 @@ brew "fnm"
 brew "fpp"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
+brew "gh"
 # Shell script to install any Go version
 brew "gimme"
 # Distributed revision control system
