@@ -38,6 +38,9 @@
     # Make `git status` faster (git 2.8.0)
     # More info: <https://news.ycombinator.com/item?id=11388479>
     untrackedCache = true
+
+    # Use diff-so-fancy for diffs
+    pager = diff-so-fancy | less --tabs=4 -RFX
 [init]
     defaultBranch = master
 [pull]
