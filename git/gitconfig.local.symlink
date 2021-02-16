@@ -38,6 +38,8 @@
     coa = commit --amend
     coan = commit --amend --no-edit
     pushf = push -f
+[init]
+    defaultBranch = master
 [pull]
     rebase = true
 [push]
