@@ -54,3 +54,9 @@ fi
 
 # dont highlight text on paste
 zle_highlight+=(paste:none)
+
+# key bindings
+bindkey "^[f" forward-word
+bindkey "^[b" backward-word
+bindkey "^A" beginning-of-line
+bindkey "^E" end-of-line
