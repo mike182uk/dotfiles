@@ -14,3 +14,6 @@ update_antibody:
 
 update_tmux:
 	@$$HOME/.tmux/plugins/tpm/bin/update_plugins all
+
+update_brewfile:
+	@brew bundle dump --force --describe --file ./homebrew/Brewfile
