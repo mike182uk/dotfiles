@@ -12,6 +12,11 @@ for file in ${(M)config_files:#*/path.zsh}; do
 	source "$file"
 done
 
+# set word-style
+# https://stackoverflow.com/questions/444951/zsh-stop-backward-kill-word-on-directory-delimiter
+autoload -U select-word-style
+select-word-style bash
+
 # statically load zsh plugins (via antibody)
 ZSH_PLUGINS_FILE="$HOME/.zsh_plugins.sh"
 
