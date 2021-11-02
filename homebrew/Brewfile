@@ -1,6 +1,5 @@
-tap "dtan4/dtan4"
+tap "dtan4/tools"
 tap "getantibody/tap"
-tap "golangci/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -9,25 +8,18 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "mike182uk/tap", "git@github.com:mike182uk/homebrew-tap.git"
 tap "minio/stable"
-tap "teamookla/speedtest"
 # Shell plugin manager
 brew "antibody"
-# Command-line tool for interacting with the balenaCloud and balena API
-brew "balena-cli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Freely available high-quality data compressor
 brew "bzip2"
-# Dependency Manager for PHP
-brew "composer"
 # Top-like interface for container metrics
 brew "ctop"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
-# Create Docker hosts locally and on cloud providers
-brew "docker-machine"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
@@ -42,16 +34,12 @@ brew "gh"
 brew "gimme"
 # Distributed revision control system
 brew "git"
-# Kubernetes package manager
-brew "helm"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
-# Asynchronous event library
-brew "libevent"
 # Conversion library
 brew "libiconv"
 # C library for reading, creating, and modifying zip archives
@@ -98,8 +86,6 @@ brew "watch"
 brew "wget"
 # Homebrew, but with Docker images
 brew "whalebrew"
-# Show the current WiFi network password
-brew "wifi-password"
 # Tracks most-used directories to make cd smarter
 brew "z"
 # General-purpose lossless data-compression library
@@ -107,82 +93,84 @@ brew "zlib"
 # UNIX shell (command interpreter)
 brew "zsh"
 # CLI tool to manage Kubernetes Secrets easily
-brew "dtan4/dtan4/k8sec"
+brew "dtan4/tools/k8sec"
 # Gist powered CLI snippet retriever
 brew "mike182uk/tap/snpt@3.0.0"
 # MinIO Client for object storage and filesystems
 brew "minio/stable/mc"
-# Ookla Speedtest
-brew "teamookla/speedtest/speedtest"
 # Application launcher and productivity software
-cask "alfred"
+cask "alfred", args: { appdir: "/Applications" }
+# Official Balena CLI tool
+cask "balena-cli"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Menu bar icon organizer
-cask "bartender"
+cask "bartender", args: { appdir: "/Applications" }
 # GUI Client for GRPC Services
 cask "bloomrpc"
 # Web browser focusing on privacy
 cask "brave-browser"
-cask "dash3"
+# API documentation browser and code snippet manager
+cask "dash5"
 # App to build and share containerized applications and microservices
-cask "docker"
+cask "docker", args: { appdir: "/Applications" }
 # Web browser
 cask "firefox"
 # Typeface made for developers
 cask "font-jetbrains-mono"
-cask "font-source-code-pro"
+cask "font-source-code-pro", args: { appdir: "/Applications" }
 # App to record the screen
-cask "gifox"
-cask "google-backup-and-sync"
+cask "gifox", args: { appdir: "/Applications" }
 # Web browser
-cask "google-chrome"
+cask "google-chrome", args: { appdir: "/Applications" }
+# Client for the Google Drive storage service
+cask "google-drive"
+# Java IDE by JetBrains
 cask "intellij-idea"
 # System monitoring app
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
+cask "iterm2", args: { appdir: "/Applications" }
+# Kubernetes IDE
+cask "lens"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
 # Reverse proxy, secure introspectable tunnels to localhost
-cask "ngrok"
+cask "ngrok", args: { appdir: "/Applications" }
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # HTTP client that helps testing and describing APIs
-cask "paw"
+cask "paw", args: { appdir: "/Applications" }
 # QuickLook plug-in that renders source code with syntax highlighting
-cask "qlcolorcode"
+cask "qlcolorcode", args: { appdir: "/Applications" }
 # Display image info and preview unsupported formats in QuickLook
-cask "qlimagesize"
+cask "qlimagesize", args: { appdir: "/Applications" }
 # QuickLook generator for Markdown files
-cask "qlmarkdown"
-cask "qlvideo"
-cask "quicklook-json"
+cask "qlmarkdown", args: { appdir: "/Applications" }
+cask "qlvideo", args: { appdir: "/Applications" }
+cask "quicklook-json", args: { appdir: "/Applications" }
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Control your Sonos system
 cask "sonos"
 # Music streaming service
-cask "spotify"
+cask "spotify", args: { appdir: "/Applications" }
 # Text editor for code, markup and prose
-cask "sublime-text"
+cask "sublime-text", args: { appdir: "/Applications" }
 # Application for inspecting installer packages
-cask "suspicious-package"
+cask "suspicious-package", args: { appdir: "/Applications" }
 # Native GUI tool for relational databases
 cask "tableplus"
-# Open-source BitTorrent client
-cask "transmission"
-# VPN client for secure internet access and private browsing
-cask "tunnelbear"
 # Development environment
-cask "vagrant"
+cask "vagrant", args: { appdir: "/Applications" }
 # Free and open-source hosted hypervisor for x86 virtualization
-cask "virtualbox"
+cask "virtualbox", args: { appdir: "/Applications" }
 # AMD64/Intel64 and x86 virtualization
 cask "virtualbox-extension-pack"
 # Open-source code editor
-cask "visual-studio-code"
+cask "visual-studio-code", args: { appdir: "/Applications" }
 # Multimedia player
-cask "vlc"
+cask "vlc", args: { appdir: "/Applications" }
 # Desktop client for WhatsApp
 cask "whatsapp"
 mas "1Password 7", id: 1333542190
@@ -195,4 +183,5 @@ mas "Pages", id: 409201541
 mas "Todoist", id: 585829637
 mas "Tweetbot", id: 557168941
 mas "Xcode", id: 497799835
-whalebrew "whalebrew/ffmpeg"
+whalebrew "composer"
+whalebrew "rtsp/mongosh"
