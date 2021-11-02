@@ -4,4 +4,4 @@ mafredri/zsh-async
 rupa/z
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
-zdharma/fast-syntax-highlighting
+zdharma-continuum/fast-syntax-highlighting
