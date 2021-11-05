@@ -10,7 +10,6 @@ alias -- -="cd -"
 
 # location shortcuts
 alias dl="cd ~/Downloads"
-alias d="cd ~/Documents"
 alias p="cd ~/Projects"
 alias h="cd ~"
 alias .f="cd ~/.dotfiles"
