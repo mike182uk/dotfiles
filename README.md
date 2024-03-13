@@ -1,3 +1,6 @@
+> [!NOTE]  
+> Superseded by [syscfg](https://github.com/mike182uk/syscfg)
+
 # Dotfiles
 
 ## Prerequisites
